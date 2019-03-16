@@ -49,7 +49,6 @@ nav_order: 0
 # To be organised 
 - developers are not interchangeable
 
-- lack of spare cycles to optimise the process
 - more documentation will not solve. Less, but right and well-organised, and discoverable, and close to the relevant place documentation will.
 - sprints always leak
 - splitting of tasks across teams
