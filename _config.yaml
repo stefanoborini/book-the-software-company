@@ -1,0 +1,4 @@
+plugins:
+  - jekyll-remote-theme
+name: The software company 
+remote_theme: stefanoborini/just-the-docs
