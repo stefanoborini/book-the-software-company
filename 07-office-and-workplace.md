@@ -1,4 +1,8 @@
-# Room and space organisation.
+---
+nav_order: 7
+---
+
+# 7 Room and space organisation
 
 - the playground office
 - vibration on desks and non enough space.

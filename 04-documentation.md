@@ -1,4 +1,7 @@
-# On Documentation
+---
+nav_order: 4
+---
+# 4 On Documentation
 
 - mess manager
 - the confluence black hole. Lack of review. disconnected documentation from code.

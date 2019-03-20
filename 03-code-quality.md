@@ -1,6 +1,8 @@
+---
+nav_order: 3
+---
 
-
-# On code quality
+# 3 On code quality
 
 - inferior tools
 - bad choice and api will haunt you forever

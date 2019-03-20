@@ -1,4 +1,7 @@
-# On Agile practice
+---
+nav_order: 2
+---
+# 2 On Agile practice
 
 - people still involved in other tasks
 - short sprints and late planning.
