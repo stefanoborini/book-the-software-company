@@ -22,3 +22,4 @@ As a software company, you carry a set of requirements to meet the goals of hand
 
 # On code ownership
 - schizophrenic development. 
+- certainty of tasks
