@@ -11,6 +11,9 @@ nav_order: 3
 - internal apis never stay internal
 - solving problem with hacks and solving the hacks with more hacks. hacks all the way down. escalation of drama
 
+# Inferior tools
+
+Code quality can be deeply compromised by inferior tools. For example, 
 
 # On code organisation
 
