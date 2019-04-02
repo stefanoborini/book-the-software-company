@@ -32,9 +32,6 @@ The book is organised as follows:
 This book is open to Pull Requests on github. 
 
 # Notes to expand
-# On interviewing and hiring new candidates
-
-- scripter vs. coder
 
 # The phases of development and needs of developers
 - boilerplate stuff should come at no cost (e.g. linting, testing setup etc). Must be there
@@ -47,10 +44,6 @@ This book is open to Pull Requests on github.
 - death by a thousands papercuts.
 - what is your business? don't develop things that are not your business. buy them.
 
-# On company growth
-- understaffing. execs may have quotas that don't reflect reality of the business. 
-- eternal september of junior devs
-- you can't cheat nature
 
 # On process
 - running out of spare capacity to improve the process
