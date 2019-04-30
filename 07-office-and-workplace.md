@@ -70,4 +70,23 @@ must be provided to host all the tools needed for the job. Developers are not ma
 They rarely move and must have all their tools and setup optimised and close at hand.
 
 
+Do the employees have heavy workloads for long periods of time?
+
+Are the employees often required to work overtime?
+
+Is it clear what is expected of each employee?
+
+Are the employees able to exert influence on their workloads and on how to perform their work?
+
+Do the employees get the necessary information to be able to perform their work satisfactorily and to prevent conflicting requirements?
+
+Does bullying and/or sexual harassment occur in the workplace?
+
+Is the work performed recognised and appreciated?
+
+Is there any risk of violence in connection with the work?
+
+Does the work include the provision of training/development, including work variety?
+
+Is support from qualified staff, management and colleagues available during the day-to-day work?
 

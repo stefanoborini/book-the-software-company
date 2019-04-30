@@ -152,3 +152,17 @@ It is my opinion that the following adjustments should be made to Scrum:
   promptly as a dependency before it escalates further. The longer is the delay, the more painful will 
   be the extraction, up to the point that no extraction will be possible.
 
+
+
+every user story starts with 3 points, base
+overall task. nothing specific. no points: only easy/medium/hard
+change tasks as things go on.
+
+sistema a catena di montaggio non funziona. Dovresti portare una feature da prototype a deployment, senza interruzioni.
+
+bad decisions are there to stay. Nobody will refactor them. Some trivial stuff gets copied around again and again.
+the design piles up layer upon layer of bad decisions. we create our own problems, and solve them with other problems.
+tragedy of the commons
+
+
+

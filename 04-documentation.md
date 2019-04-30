@@ -71,3 +71,19 @@ write quality documentation. I developed overall criteria to assess the quality 
 
 - develop common language within team
 - poor communicaiton and organization of info
+
+
+Documentation as part of the software component (versioned, tracked, “near” to the code)
+Solid, but essential documentation for:
+General development environment setup (used by IT for onboarding)
+Component specific dev environment setup
+deployment and release process of the software component
+Fundamental API usage (not API reference, unless a project requirement) 
+if component is used by external teams.
+Code documentation
+Docstrings are where the reference API is described.
+Most programmers browse code and learn API with their IDE, not with browser.
+Enforce consistency of API naming, least surprise principle, proper naming, orthogonal behavior, minimalistic code, use of well-understood design patterns. Train as appropriate. 
+If browser-oriented reference API is convenient or desirable, generate via standard tools (sphinx/doxygen).
+Reduce use of wiki tools such as Confluence/MediaWiki to reduce synchronization burden. Code documentation lives with code.
+Periodic refactoring of documentation layout in case of discoverability shortcomings and cleanup of outdated information.
