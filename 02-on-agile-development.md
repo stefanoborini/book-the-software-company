@@ -1,7 +1,7 @@
 ---
 nav_order: 2
 ---
-# 2 On Agile practice
+# 2 On Agile Development
 
 Agile is great. It's an excellent way to work. Unfortunately there's a strong
 disconnection between what Agile methodologies are and *what people think*
