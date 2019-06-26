@@ -46,15 +46,8 @@ This book is open to Pull Requests on github.
 # On process
 - running out of spare capacity to improve the process
 - everything priority one, therefore switch context all the time
-- communication channel proliferation (mail, chat, jira, etc)
 
 # On management
-- withhold info until definitive.
-- execs may be married to a formula.
-- developers as brain cells. making them leave is a lobotomy
-- pissing off developers. Grueling tasks
-- developers are not interchangeable
-- splitting of tasks across teams
 
 # On bug reporting and issue tracking
 
