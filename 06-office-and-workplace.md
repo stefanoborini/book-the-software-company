@@ -2,7 +2,7 @@
 nav_order: 7
 ---
 
-# 7 Room and space organisation
+# 7 On office and workspace 
 
 This chapter will focus on the office layout and choices to make to accommodate
 software development in a company.  The Joel test entry number 8 recites
@@ -70,6 +70,19 @@ must be provided to host all the tools needed for the job. Developers are not ma
 They rarely move and must have all their tools and setup optimised and close at hand.
 
 
+1. Do you have and use whiteboards?
+
+Software development requires communication and brainstorming. Software management
+requires keeping track of tasks. The whiteboard is the perfect tool to satisfy both
+needs. You can't brainstorm on a piece of paper, and if you like SCRUM methodologies
+you need a surface for you task stickers.
+
+A technology company that does not provide whiteboards is seriously limiting its
+employees ability to communicate and describe abstract concepts in easy to grasp,
+easy to remember pictures. I would think twice accepting a job in any company that
+does not have whiteboards.
+
+
 Do the employees have heavy workloads for long periods of time?
 
 Are the employees often required to work overtime?
@@ -90,3 +103,4 @@ Does the work include the provision of training/development, including work vari
 
 Is support from qualified staff, management and colleagues available during the day-to-day work?
 
+- extremely uncomfortable tables, both for height, and for transmission of vibrations between employees.

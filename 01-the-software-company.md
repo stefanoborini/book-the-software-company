@@ -1,12 +1,13 @@
 ---
+title: The Software Company
 nav_order: 1
 ---
 # 1 The Software Company
 
 If your company creates software of any kind, from basic scripts to complex applications, it is a software company.
-It is irrelevant if its core business is not software. While this seems to be a trivial point to make, my personal
-experience with multiple companies from manufacturing to pharmaceuticals point at how often this fundamental point
-is ignored.
+It is irrelevant that its core business is not software. While this seems to be a trivial point to make, my personal
+experience with multiple companies from manufacturing to pharmaceuticals points at how often this fundamental
+concept is downplayed.
 
 As a software company, you carry a set of requirements to meet the goals of handling software. You need to handle:
 
@@ -19,6 +20,8 @@ As a software company, you carry a set of requirements to meet the goals of hand
 - interaction of the software with your core business
 - deployment of the software, either in house, off-site (e.g. with third parties), or in the cloud.
 - interaction of software development process with your core business process.
+
+
 
 # On code ownership
 - schizophrenic development. 
@@ -52,25 +55,12 @@ As a software company, you carry a set of requirements to meet the goals of hand
 - As above, the fact that these issues are constantly added to the milestones means that it's pretty much impossible to know how far we are from reaching the goal.
 - It's often unclear who is the expert in this or that technology if one has a problem with it.
 - The illness policy makes people come to work while sick, spreading the illness and reducing productivity.
-- extremely uncomfortable tables, both for height, and for transmission of vibrations between employees.
 - the production pipeline is constantly interrupted due to poor forward thinking. e.g. in the decision on how to present multiple tracks in the alignment view and which code should be responsible for it, these things should already be discussed and ready for the beginning of the milestone. There's no product owner responsible for this high level decision.
 - bad management of the issue tracker. keep pushing non-milestone tasks from milestone to milestone, instead of leaving them for slack time after the release. The issue list for a milestone should contain what it's expected from the customer for that iteration, that is, the goals (user story), plus the individual tasks on how to achieve that. This way we can know how far we are from customer completion.
 - It's not always clear who is doing what, when.
 - Complexity for the sake of complexity. Inability to keep things simple and lean.
 - solving big problems without addressing user-centric fundamental (e.g. installation)
 - members enter and exit the team on-demand without any minimal planning/expected need.
-
-1. Do you have and use whiteboards?
-
-Software development requires communication and brainstorming. Software management
-requires keeping track of tasks. The whiteboard is the perfect tool to satisfy both
-needs. You can't brainstorm on a piece of paper, and if you like SCRUM methodologies
-you need a surface for you task stickers.
-
-A technology company that does not provide whiteboards is seriously limiting its
-employees ability to communicate and describe abstract concepts in easy to grasp,
-easy to remember pictures. I would think twice accepting a job in any company that
-does not have whiteboards.
 
 2. Do you invest in your own tools?
 
@@ -100,16 +90,6 @@ Menacing your team of layoffs, or proposing incentives will not change
 velocity. It will just increase time (they will work overtime), but this
 affects velocity (people are tired, introduce more bugs, skip over important
 details) so the net result is less motivated individuals and a lousy product.
-
-4. Do you respect your employees?
-
-Software developers spend 8 hours a day in front of a computer. Respecting them  Respect comes in many different forms.
-
-- Good, isolated desks that can be raised. Reduces vibration transmission, allows to work while standing.
-- training days.
-- Technical excellence: no restrictions for hardware gear, on a no questions asked 
-- short meetings that are counted as working hours.
-- no quibbling over buying a windows license. 
 
 5. Do you plan ahead?
 
@@ -148,27 +128,6 @@ is essential.
 9. Do you have a technical lead and a project manager?
 
 Conflicts arise from poor management. 
-
-10. Do you ask relevant questions at the interview?
-
-I lost count of how many times I've been asked to traverse a tree depth first at a job interview.
-The problem I have with this kind of question is that they are irrelevant. I have 10 years
-of experience in scientific coding, and never in my own career I had to traverse a tree depth 
-first. If I have to, I use networkx. No job position for a senior level coding requires you to be
-able to traverse a tree depth first.
-
-What is then, a relevant question for a job interview? There's only one. "Show me 
-and explain me some code you wrote, and eventually add a small feature for me during the
-interview". 
-
-11. Is the team involved in the interview process?
-
-Any hired person must mix well with the rest of the team. If management is excluding 
-the team from the decision process, it is disregarding the most valuable contribute in
-selecting the candidate, or asking the important questions considering the state of the
-current codebase. Does management know we desperately need someone that is a wizard at
-gdb, because we are plagued by low level crashes since a year? Will they keep that as 
-a checkmark during the interview process?
 
 12. Do you keep up with technology?
 
