@@ -1,8 +1,8 @@
 ---
-nav_order: 7
+nav_order: 6
 ---
 
-# 7 On office and workspace 
+# 6 On office and workspace 
 
 This chapter will focus on the office layout and choices to make to accommodate
 software development in a company.  The Joel test entry number 8 recites
