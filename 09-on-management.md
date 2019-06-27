@@ -48,3 +48,7 @@ Disruption.
 
 - strong reluctance of the executive to finance improvement of our tools, offloading these tasks to either "side projects" or as "consequences" of other development. Leaving this to personal initiative leads to unresponsiveness and uncoordination.
 management pet projects that don't address the business need.
+- Excessive involvement of developers in secondary tasks
+- Putting a business critical project in the hands of a completely different team on a different location, with no chance for one of the new developers to get an introduction to the code base.
+- Unclear roles and process in handling issues.
+- the production pipeline is constantly interrupted due to poor forward thinking. These things should already be discussed and ready for the beginning of the milestone. There's no product owner responsible for this high level decision.

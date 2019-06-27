@@ -29,31 +29,3 @@ The book is organised as follows:
 
 This book is open to Pull Requests on github. 
 
-# Notes to expand
-
-# The phases of development and needs of developers
-- boilerplate stuff should come at no cost (e.g. linting, testing setup etc). Must be there
-- train team on our internal tools
-
-# On projects
-
-- throw software at a problem instead of a person.
-- too many new tools at once.
-- death by a thousands papercuts.
-- what is your business? don't develop things that are not your business. buy them.
-
-
-# On process
-- running out of spare capacity to improve the process
-- everything priority one, therefore switch context all the time
-
-# On management
-
-# On bug reporting and issue tracking
-
-# To be organised 
-- jira, windows and everything that gets in the way.
-- jira poor standardised workflow.
-- tickets that can't move easily across boundaries.
-- big concepts need a high level picture. No space to see it or poor tools to represent them.
-

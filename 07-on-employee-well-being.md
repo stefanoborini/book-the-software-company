@@ -14,4 +14,4 @@ Software developers spend 8 hours a day in front of a computer. Respecting them 
 - Technical excellence: no restrictions for hardware gear, on a no questions asked 
 - short meetings that are counted as working hours.
 - no quibbling over buying a windows license. 
-
+- billing of hours policy
