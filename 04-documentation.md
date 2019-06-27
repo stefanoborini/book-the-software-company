@@ -87,3 +87,5 @@ Enforce consistency of API naming, least surprise principle, proper naming, orth
 If browser-oriented reference API is convenient or desirable, generate via standard tools (sphinx/doxygen).
 Reduce use of wiki tools such as Confluence/MediaWiki to reduce synchronization burden. Code documentation lives with code.
 Periodic refactoring of documentation layout in case of discoverability shortcomings and cleanup of outdated information.
+
+- Spending excessive amout of time in documenting the code when the design is prone to change. The code is the documentation. I understand that excessive turnover of the developers may want to keep information stored somewhere, but it's probably better to focus on keeping competences and teams together so that projects are not handed out to some new random person/group every time.

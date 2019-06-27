@@ -87,3 +87,51 @@ security, or string manipulation.
 - code ownership: tragedy of the commons, bystander effect.
 
 
+12. Do you keep up with technology?
+
+Sooner or later, something of your hardly implemented solutions will be implemented better
+by some external product. It is time to move away from your internal product. You are delegating
+problems. I've seen plenty of times when stubborn developers clinged to their own file format
+when HDF5 offered the experience of a full research team whose goal is to deliver the most
+performant file format for scientific storage. Your business is in developing scientific
+software, not in developing file formats. Ditch your file format. It made sense 10 years ago,
+now it's time to move on.
+
+This is also important because people working for you are not only here for the money. They are
+also here to learn new techniques. Using internally developed tools does not enrich their curriculum,
+and if they don't want to become irrelevant on the job market, they are not going to like it.
+
+2. Do you invest in your own tools?
+
+Any technology product builds on previously established tools. In the startup phase,
+these tools are external ones, either opensource or commercial products. As the startup
+grows, so does the need for specialized tools, such as a deployment infrastructure, a
+specialized library for core business tasks, classes and functions to reduce boilerplate,
+documentation. You must invest in these tools because they increase the velocity of
+development, yet investment in these tools is considered waste because it does not generate
+revenue. Truth is, your developers are customers too, and specifically they are customers 
+that consume money. The more they have to fiddle with your own broken tools, the less
+efficient they will be. Invest in your tools, or your ability to deliver will be crushed 
+under their ineffectiveness.
+
+- write code that is overly complex in response to needs for genericity that is not there, in the name of flexibility, but end up being inflexible due to the complexity of the resulting design.
+- Complexity for the sake of complexity. Inability to keep things simple and lean.
+
+6. Do you have loose, but full code ownership?
+
+Any software developer or manager has his own opinion on this one. Code ownership
+has always been a hot topic. Those in the field of Agile tend to favor collective code ownership.
+I propose that every brain works in a different way, and establishes different
+rules and conventions to build something. Those who claim shared code ownership encourage sharing of
+these conventions, but in practice, for large codebases, these conventions are too many.
+Some redundancy is good, but in practice you should leave the code in the hands and brain
+of the person who built it first. He knows the rules of its own universe, he aderes to them
+and is hopefully more consistent than a bunch of people acting on it.
+
+Coding is not wikipedia. Wikipedia does not rely on logic to build a meaningful narrative.
+Coding requires correctness and logical consistency.
+
+- code conflicts arise from poor management. 
+
+- schizophrenic development: many different brains with no clear, uniform mindset lead to confusing, schizophrenic code.
+- implementing the same things twice in parallel 

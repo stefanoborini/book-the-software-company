@@ -104,3 +104,4 @@ Does the work include the provision of training/development, including work vari
 Is support from qualified staff, management and colleagues available during the day-to-day work?
 
 - extremely uncomfortable tables, both for height, and for transmission of vibrations between employees.
+- Putting the project in a location that is space limited for additional hires.

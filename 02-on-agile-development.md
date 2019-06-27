@@ -100,26 +100,30 @@ matching songs as they type the name they are searching.
 ```
 
 While this seems trivial, it is not only a petty lexical and formatting
-requirement. The user story must be human, and must address the As a I want So
-that need, but leave space for broader explanatory power. Artificially
-constraining your story to a rigid template of sterile questions is not the
-goal. The goal is to communicate intent clearly. Religiously following the
-template does not achieve that. Enforcing the following of this template
-religiously in structure rather than intent is detrimental.
-
+requirement. The user story must be human, and must address the "As a I want So
+that" need, but leave space for ease of readability and broader explanatory
+power. Artificially constraining your story to a rigid template of sterile
+questions is not the goal. The goal is to communicate intent clearly.
+Religiously following the template does not achieve that. Enforcing the
+following of this template religiously in structure rather than intent is
+detrimental, and shows a compliance to the rules typical of people who are
+inexperienced.
 
 
 ## The untold dark consequences of Scrum
 
-In all instances of use of Scrum I've seen, the code quality has always been abysmal.
-I am unwilling to assign to Scrum or Agile practices the responibility for such failure, but
-it is worth stressing out a few important points.
+In all instances of use of Scrum I've seen, the code quality has always been
+abysmal.  I am unwilling to assign to Scrum or Agile practices the
+responibility for such failure, but it is worth stressing out a few important
+points.
 
-Scrum favors the resolution of user stories, that is, goals that provide benefit for the
-Product Owner, and by proxy, the end user. It does not, however, address the
-need for stories that keep velocity high. Retrospectives may (and often do) consider procedural
-shortcomings and how to address them, but another part of the retrospective discussion is generally
-code quality, lack of documentation, deceiving interfaces, false dependencies, lack of expertise.
+Scrum favors the resolution of user stories, that is, goals that provide
+benefit for the Product Owner, and by proxy, the end user. It does not,
+however, address the need for stories that keep velocity high. Retrospectives
+may (and often do) consider procedural shortcomings and how to address them,
+but another part of the retrospective discussion is generally
+code quality, lack of documentation, deceiving interfaces, false dependencies,
+lack of expertise.
 
 The truth is, there are two customers to the codebase: 
 
@@ -165,4 +169,15 @@ the design piles up layer upon layer of bad decisions. we create our own problem
 tragedy of the commons
 
 
+# On code ownership
 
+8. Do you track progress with a physical medium?
+
+Nothing is more frustrating not to know how far you are, what needs to be done, what is still pending.
+I've seen plenty of times when things pile up due to urgency.
+
+We are sensory driven animals. We manipulate objects and having objects represent what needs to be done
+is essential.
+
+- Issues are generally not measurable in achievement. "Cleanup this" is not measurable. We can clean it up for an hour or for three days.
+- certainty of tasks: A person who picks up a task must be clear on what to do
