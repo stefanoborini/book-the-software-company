@@ -34,7 +34,6 @@ who buys and installs their computers?
 
 - Undefined long term strategic goal, both in scope and in excessive verbosity of the presentations that dilute the key points.
 
-- The illness policy makes people come to work while sick, spreading the illness and reducing productivity.
 - Poor management tools.
 - constant panic mode is indicative of poor initial technical planning
 
@@ -52,3 +51,8 @@ management pet projects that don't address the business need.
 - Putting a business critical project in the hands of a completely different team on a different location, with no chance for one of the new developers to get an introduction to the code base.
 - Unclear roles and process in handling issues.
 - the production pipeline is constantly interrupted due to poor forward thinking. These things should already be discussed and ready for the beginning of the milestone. There's no product owner responsible for this high level decision.
+
+- running out of spare capacity to improve the process
+- everything priority one, therefore switch context all the time
+- what is your business? don't develop things that are not your business. buy them.
+

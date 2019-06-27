@@ -112,9 +112,6 @@ expertise, generally through omissions or unclear statements. You want to
 filter those out at the phone interview.
 
 
-
-
-
 # On phone screening
 
 The phone interview is the next obvious step, especially for candidates that are

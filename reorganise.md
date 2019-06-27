@@ -14,13 +14,9 @@ nav_order: 10
 - throw software at a problem instead of a person.
 - too many new tools at once.
 - death by a thousands papercuts.
-- what is your business? don't develop things that are not your business. buy them.
 
 
 # On process
-- running out of spare capacity to improve the process
-- everything priority one, therefore switch context all the time
-
 # On management
 
 # On bug reporting and issue tracking
