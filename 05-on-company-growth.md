@@ -46,16 +46,132 @@ schizophrenic assignment of tasks. Things will be forgotten, unassigned, imprope
 filed, and the process will grind to a confusing halt, possibly forgotten and whose only
 remnants will be confusing documents and Jira tickets.
 
-# On interviewing and hiring new candidates
 
-When it comes to interviewing, it is somehow disappointing how the process is flawed
-in all respects. 
+# On publishing job announcements
+
+The first mistake of a software company happens at the job announcement phase.
+A job annoucement should explain clearly the critical points that are required
+for the job, the position the new hire will fill. I've seen too many job
+announcements where it's unclear what kind of person is needed. I suspect there's
+some business driven paranoia in not exposing the company to snooping from competitors,
+but most of the times, when seeing it from the inside, this lack of clarity arises from
+the fact that HR writes the opening according to a template, and the fact that, when
+the position is opened, it is not done because there's an actual clear plan on where to
+assign the new hire. Instead, the position is opened because the "company needs to grow".
+The resulting job opening tends to be unclear and vague on its requirements.
+
+A good announcement should be clear on the position, clear on the salary, and
+clear on the tools, frameworks and libraries that will be used on a day to day
+basis. A "not unheard of" practice is to include a language or framework that
+is not relevant to the job but is there to demonstrate a more general openness.
+For example, asking for C++ skills as a requisite for a python position, or
+some other lesser used paradigm such as functional languages. While it's
+probably a reasonable assumption that these requests may act as a filter, they
+are unfair to the candidate and I have personal doubts they actually achieve
+their desired goal. What is clearly a wrong practice is to advertise jobs
+looking for ninja, pirates or rockstars. The juvenile mindset behind such
+advertisements makes it clear that your company is something that only collects
+junior developers (because they can't find anything else with their current
+skill level), or people with a strong Dunning Kruger effect in action. Job
+positions and descriptions have a meaning for the experts in the field, because
+they use this classification to understand the type of skills they have to bring
+to the table, as well as the expected salary.
+
+Another common mistake is advertising the job on the wrong channels.  Using the
+proper channels, keywords and phrasing may make or break the visibility of the
+announcement, and with it, the type of candidates that will apply. Developers
+tend to join and be part of communities (either online or offline), and you
+should target those communities for better results. 
+
+# On Resume screening
+
+Once the resumes start pouring in, you should discard those who clearly don't
+have the appropriate experience and they are just "give it a try", both because
+they are clearly not appropriate for the position, and because they will,
+possibly, choose another company that is a better fit for their skillset if one
+comes along. Interviewing is a large time investment, you want to minimise this cost.
+
+Your aim should focus on both general technical skills and technology expertise
+in the specific tool, framework, or library you use.  The first gives a sense
+of a person that knows a broader vision of the world and is not married to a
+concept or framework (which eventually leads to "Cargo culting"), the second
+gives you a person that is operational from day one and has already a good
+knowledge of the errors and quirks of the technology. You want a person that
+has seen them all with that framework or library, so when it's time to solve a
+problem, the solution is obvious.
+
+You want to discard anybody who doesn't have code to show online. From new hires,
+to old senior developers, a developer has some code he wrote and uploaded somewhere.
+Examine this code and verify its quality and compliance with known good practices,
+and also verify how much of the code has actually been written by the candidate.
+
+The remaining resumes are people who are good, hopefully, mixed with a lot of
+people who are lying.  From my experience, I'd say that one out of three
+candidates actively lie on their resume or grossly misrepresent their
+expertise, generally through omissions or unclear statements. You want to
+filter those out at the phone interview.
 
 
-I've seen quite a few interesting development during interviews.  People that
+
+
+
+# On phone screening
+
+The phone interview is the next obvious step, especially for candidates that are
+not nearby, but I think that phone screening should be done regardless. During the
+phone interview, apart from the formalities of introduction, the focus should be on
+simple questions that someone who used those technologies must necessarily know the 
+answer. You should, however, not be all or nothing, especially with people with a certain
+seniority, because they might have been proficient in some languages, but their
+proficiency fades with time. They may not remember things on the spot, or
+remember them incorrectly. Generally, you can see if someone knows what he or
+she's talking about after a few seconds. If they are rusty is not necessarily a reason
+to reject them.
+
+Technical people like technical questions. It stimulates them. However, you should be
+wary of the talkers, for two reasons: first, they might be excessively verbose during their
+day to day activities, which leads to long, pointless discussions. Second: they may know
+the theory, but not the practical points. Like a musician that knows everything about
+harmony and chords and metric, but can't play a single instrument, you want a person
+who knows the theory but also can write code.
+
+On the practice of doing code interviews online, I think that their value exists if:
+
+- the code discussion is not about testing the knowledge of a particular algorithm
+- the online coding platform is not obnoxious to use or unsuited for the task
+- the online coding platform makes it clear that the candidate and only the
+  candidate is the one writing the code.
+- the code is a topic for conversation to explore the knowledge of the candidate when it comes
+  to design strategies, naming, documentation practices.
+
+Coding interviews where you are given 1 hour to create a working implementation
+of a periodic game of life that passes the specified testsuite do not test the
+candidate flexibility and ability to code. They are testing those who are
+already familiar with the algorithm and can write whatever code to make the
+tests pass.
+
+You can, however, provide more complex challenges, depending on the seniority.
+For example, I found myself extremely pleased when I was given a few days to
+create a simple online service with react to perform queries to a third party
+server, or when I was asked to talk about the design I would choose for a chess
+program. In the first case, you give the candidate time to research the proper
+solution, as well as make mistakes. You get a smoother signal on the quality of
+the code. In the second case, the question touches many different topics, from 
+model-view-controller design, to how to represent the data effectively, disk storage.
+It's a conversation topic that evaluates the ability of the candidate to think design,
+regardless of the complexities of the algorithm that backs it.
+
+However, offline exercises don't give any guarantee that the candidate is the
+person who is actually doing them. it's imperative that this code is then the
+topic of a throughout analysis (with potential changes on demand) during the
+on-site interview.
+
+# On interviewing on-site
+
+I've seen quite a few interesting development during on-site interviews.  People that
 look brilliant on paper, or even on GitHub, are then found unable to code basic
-functionalities. Some candidates are interviewed remotely, and they are clearly
-not writing the code on a shared document, relying on someone else to write it.
+functionalities. I've witnessed candidates interviewed remotely, that are clearly
+not the ones writing the code on a shared document, relying on someone else to write it.
 
 The most important question to answer during an interview for a developer is: can this person
 write code? Like you would not hire a piano player without asking him to play a tune, you should
@@ -134,7 +250,6 @@ The problem I have with this kind of question is that they are irrelevant. I hav
 of experience in scientific coding, and never in my own career I had to traverse a tree depth 
 first. If I have to, I use networkx. No job position for a senior level coding requires you to be
 able to traverse a tree depth first.
-
 
 - *Is the team involved in the interview process?*
 
