@@ -6,7 +6,6 @@ nav_order: 10
 # Notes to expand
 
 # The phases of development and needs of developers
-- boilerplate stuff should come at no cost (e.g. linting, testing setup etc). Must be there
 - train team on our internal tools
 
 # On projects
@@ -22,9 +21,6 @@ nav_order: 10
 # On bug reporting and issue tracking
 
 # To be organised 
-- jira, windows and everything that gets in the way.
-- jira poor standardised workflow.
-- tickets that can't move easily across boundaries.
 - big concepts need a high level picture. No space to see it or poor tools to represent them.
 
 

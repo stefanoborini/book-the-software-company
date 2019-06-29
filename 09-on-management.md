@@ -56,3 +56,53 @@ management pet projects that don't address the business need.
 - everything priority one, therefore switch context all the time
 - what is your business? don't develop things that are not your business. buy them.
 
+
+# on Jira
+
+I argued with myself for a long time where to put this section. Management, communication, or general principles.
+I decided to choose management because this tool is definitely addressed to management.
+
+Jira is, for better or worse, the unfortunate standard of project management tools in the industry. Other tools exist,
+but by far Jira is, if not the most common, the most commonly known. Unfortunately it is also deeply flawed as a tool.
+
+Stripped out of its poor UI, Jira is a relational database with a fancy
+interface to describe table views.  It does not provide a solution for project
+management. Rather, it provides a generic tool that you can use to do project
+management. The difference may seem unimportant, but the reality is that the
+claimed "flexibility" of Jira masks an unwillingness by Jira's development team
+to create a well-researched workflow, and puts the burden on your company to
+devise this workflow.
+
+The consequences of this are:
+
+- Jira has no standardized workflow or terminology. Knowledge and use cannot be
+  ported between companies or even departments or groups of the same company,
+  because each company, department, or group may invent their own redundant, deceiving
+  terminology that is meaningful only locally within the group.
+
+- Jira provides tons of plugins that add functionality to dialogs, boards, and issues. 
+  These plugins, as well as the need to configure and setup appropriately the boards,
+  introduce irrelevant options (that need occasional dummy data), complex
+  and redundant workflows to create issues, misconfigured boards, incorrect or
+  obsolete terms, teams or classifications that cannot be removed (because
+  historically relevant) and pollute the selection dialogs. All of this adds
+  even more lack of skill portability and makes extremely hard to onboard a new
+  team member.
+
+- The nature of Jira as a database and boards as views mean that issue will
+  only appear if they match a query. The result is that, either to
+  misclassification or obsolescence of the board in favor of a different one
+  after a reorganisation, entries will be forgotten, disappear, or never appear.
+
+- Jira has massive UI shortcomings and bugs that have been requested for
+  years to be fixed, and are still unsolved. The UI is slow and
+  counterintuitive, cluttered with confusing choices and obtuse behavior that
+  reject your input unless you learn all its needs and workarounds and scales poorly
+  to large number of issues.
+
+
+In other words, if before installing Jira you have one problem, that is, doing
+project management, when you install Jira you have three problems: managing
+Jira buggy interface and behavior, coming up with usage and practices to map
+your business to Jira's way, and manage the chaos that Jira usage eventually
+produces.

@@ -52,6 +52,7 @@ On top of the runtime, you create your software.
 versioncontrol, bug tracking, process tracking, feature tracking, version planning,
 quality assurance (review, linting)
 build infrastructure.
+- boilerplate stuff should come at no cost (e.g. linting, testing setup etc). Must be there
 
 
 # Documenting the software
