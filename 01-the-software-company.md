@@ -49,6 +49,10 @@ company uses your runtime's software packages, and not else.
 # Creating and mainining the software
 
 On top of the runtime, you create your software.
+versioncontrol, bug tracking, process tracking, feature tracking, version planning,
+quality assurance (review, linting)
+build infrastructure.
+
 
 # Documenting the software
 
@@ -57,13 +61,27 @@ On top of the runtime, you create your software.
 
 # Testing the software
 
+, unit testing, integration testing)
+mocks, testing infrastructure and reporting system, testing rigs
 
 
 # Handling the testing infrastructure
 
+# Handing the network and cloud infrastructure
+
+databases (production, testing) 
+
 # Version and release the software
 
 # Deploy the software
+
+creating installation scripts that are adequate for the target platform, smooth out
+unexpected circumstances and differences in the target machine (proxy, antivirus, 
+ACL).
+
+# Handle deprecation, upgrades and migration.
+
+of file formats, database schema changes.
 
 # Interaction of the software with the core business
 
