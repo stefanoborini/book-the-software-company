@@ -271,3 +271,6 @@ interview".
 - eternal september of junior devs
 - you can't cheat nature
 
+- Push for consultants from Boeing https://www.bloomberg.com/news/articles/2019-06-28/boeing-s-737-max-software-outsourced-to-9-an-hour-engineers
+
+
