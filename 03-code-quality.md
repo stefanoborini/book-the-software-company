@@ -135,3 +135,4 @@ Coding requires correctness and logical consistency.
 
 - schizophrenic development: many different brains with no clear, uniform mindset lead to confusing, schizophrenic code.
 - implementing the same things twice in parallel 
+- solving big problems without addressing user-centric fundamental (e.g. installation)

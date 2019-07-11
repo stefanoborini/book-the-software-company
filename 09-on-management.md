@@ -219,3 +219,7 @@ tool is the language by which management organises and coordinates the effort
 across the team and the rest of the company. A good language means nothing
 if what is said is utter nonsense, and no philosopher can express ideas relying
 only on unstructured guttural sounds.
+
+- members enter and exit the team on-demand without any minimal planning/expected need.
+- throw software at a problem instead of a person.
+- train team on our internal tools

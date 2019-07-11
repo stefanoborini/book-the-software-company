@@ -61,3 +61,9 @@ assigned the sole task of exploring a technology that they find both interesting
 and relevant for future use within the company. While one could argue that this is
 "informally already present", you want to stress the existence of this feature
 so that people can plan, organise, and follow through with their committment.
+
+- too many new tools at once.
+
+
+- Technologies that we use are overdesigned or redundant, no training given, huge money sinks because they don't behave like expected.
+

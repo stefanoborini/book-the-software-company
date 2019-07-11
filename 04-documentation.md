@@ -150,3 +150,5 @@ to keep information stored somewhere,
 
 but it's probably better to focus on keeping competences 
 and teams together so that projects are not handed out to some new random person/group every time.
+
+- big concepts need a high level picture. No space to see it or poor tools to represent them.

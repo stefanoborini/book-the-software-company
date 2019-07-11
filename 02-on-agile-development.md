@@ -181,3 +181,22 @@ is essential.
 
 - Issues are generally not measurable in achievement. "Cleanup this" is not measurable. We can clean it up for an hour or for three days.
 - certainty of tasks: A person who picks up a task must be clear on what to do
+
+
+- Excessive bickering over technicalities.
+
+- death by a thousands papercuts.
+- unclear dependencies of the various stages of the sprint.
+
+- Excessive use of github issues as a "notebook" introduces a lot of notification noise. A developer has a development track. We should not keep creating issues just for us as reminders. While I understand that the goal is to keep PR small, I fear it decreases understandability instead of increasing it.
+
+- Development model makes it complex to keep the code forward, New branches must depend on still not merged branches, meaning that often we end up with conflicts.
+- hard to know the progress and the remaining work to be done for the specific
+  milestone. GitHub tracker is too primitive.
+- Prioritization and scheduling is pretty much left to random. PM should prioritize and assign issues, remind of the status.
+- bad management of the issue tracker. keep pushing non-milestone tasks from milestone to milestone, instead of leaving them for slack time after the release. The issue list for a milestone should contain what it's expected from the customer for that iteration, that is, the goals (user story), plus the individual tasks on how to achieve that. This way we can know how far we are from customer completion.
+
+- disorganized, complex workflow, limited by the rate of review to get features into the main branch.
+- As above, the fact that these issues are constantly added to the milestones means that it's pretty much impossible to know how far we are from reaching the goal.
+
+- throw software at a problem instead of a person.
