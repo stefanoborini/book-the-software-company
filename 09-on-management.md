@@ -4,11 +4,12 @@ nav_order: 9
 # 9 On Management
 
 
-This section wants to dig deeper into management and execs strategy when it comes to integrating 
-the software company into a more articulated and complex business. Note that this does not necessarily
-imply a failure of the business (although I've seen cases where this was indeed the case). It will
-however consider issues that may compromise, ruin, or introduce a general feeling of poor satisfaction,
-and thus poor loyalty to the company.
+This section wants to dig deeper into management and execs strategy when it
+comes to integrating the software company into a more articulated and complex
+business. Note that this does not necessarily imply a failure of the business
+(although I've seen cases where this was indeed the case). It will however
+consider issues that may compromise, ruin, or introduce a general feeling of
+poor satisfaction, and thus poor loyalty to the company.
 
 The important take home message of this whole chapter can be summed up in a
 single phrase: **your company is a brain, and developers are its neurons.
@@ -73,6 +74,55 @@ deadline. Their debt should be their debt alone, it should not be transferred to
 Which brings me to the topic of consultants.
 
 ## On consultants
+
+Consultants can be both a blessing and a bane for the software company. In general, consultants
+are hired: 
+
+- in response of a perceived lack of in-house skills 
+- in response to tight deadlines and panic modes
+- and finally, for software that can be outsourced with perceived minimal repercussion
+
+First, let me point out that consultants are, more often than not, extremely
+effective and efficient.  The reason is that they have practiced a lot on many
+different problems, thus acquiring a level of skills and effectiveness that is
+hard to find in developers that have seen only a restricted set of projects.
+They also optimized as much as possible the toolkit they use, meaning that they
+are extremely effective and can develop without hiccups.
+
+Another important factor of consultants is that they are outside of the business politics
+and the business distractions. They focus on the code, without distractions, generally
+with a team of people with the same skillset that has been selected specifically for the
+same characteristics: high technical competence, effectiveness and adaptability.
+
+Unfortunately, consultants can also be a major liability. Consultants are
+generally given specs, so in most cases they are waterfall-driven. The result
+is that what they produce is generally biased by either their own
+interpretation of the specs, or the incorrect understanding of the problem by
+the spec writer. The assumption by management is that consultants can just be
+handed a problem (often, if not always, described very poorly) and expect that
+they will give results. They are expensive, after all! But monetary price is
+not necessarily related to quality, especially when the customer does not know
+what it wants. Some consultants work on-site, and some consultants try to
+involve the customer in shorter feedback loop, but from my experience the
+management or whoever commissioned the software is too busy or too detached
+from the problem to have an answer. These kind of projects generally don't have
+a product owner, or if they do, he or she has no clue.
+
+The second problem with consultants is that they might work to satisfy the
+specs (and the final application will), not necessarily to deliver something
+that works, or that is at a good level of quality in terms of code,
+documentation or design.  This often results in returning customers, because
+"the application is there and satisfies the specs we gave you, but some things
+were badly specified, so we need you to finish it with the revised specs". 
+There is no incentive to leave the customer fully satisfied, because a fully
+satisfied customer is a customer that won't come back for more. I've seen this
+strategy used by some consultants.
+
+The third problem, and by far the biggest, is that once their job is done,
+not only nothing of their knowledge is preserved inside the company. They end up
+dropping a possibly large codebase onto the company to people who have no
+expertise nor insight, but will have to maintain it from now on. This will bring
+the internal team who inherited the code to a screeching halt.
 
 ## On product owners
 
