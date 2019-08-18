@@ -124,6 +124,12 @@ dropping a possibly large codebase onto the company to people who have no
 expertise nor insight, but will have to maintain it from now on. This will bring
 the internal team who inherited the code to a screeching halt.
 
+The botton line is that consultants are a useful addition for some tasks, but
+if your product relies fully or in part on the work of consultants, you are going to face
+knowledge and reliability issues going forward, as well as a potential lock-in onto
+some technologies and technical choices that might spell disaster in the long run.
+
+
 ## On product owners
 
 A product owner is the person responsible for the direction and feature
@@ -273,3 +279,7 @@ only on unstructured guttural sounds.
 - members enter and exit the team on-demand without any minimal planning/expected need.
 - throw software at a problem instead of a person.
 - train team on our internal tools
+
+
+The poplar tree company: top execs, a large amount of managers, and very few that actually do things.
+
