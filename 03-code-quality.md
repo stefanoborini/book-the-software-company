@@ -136,3 +136,14 @@ Coding requires correctness and logical consistency.
 - schizophrenic development: many different brains with no clear, uniform mindset lead to confusing, schizophrenic code.
 - implementing the same things twice in parallel 
 - solving big problems without addressing user-centric fundamental (e.g. installation)
+
+# Disorganized notes 
+
+%s methodology for manufacturing should be applied to software as well.
+5s is a workplace organisation strategy that focus on the following points:
+
+- Sort: 
+- Set in order:
+- Shine
+- Standardise
+- Sustain:
