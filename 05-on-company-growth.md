@@ -274,3 +274,9 @@ interview".
 - Push for consultants from Boeing https://www.bloomberg.com/news/articles/2019-06-28/boeing-s-737-max-software-outsourced-to-9-an-hour-engineers
 
 
+Hiring is broken. what you need is people with two characteristics:
+
+- fundamental skills: provides sustainable solutions
+- specific knowledge: develops fast
+- domain understanding: can communicate to the rest of the company and understand the customer's requirements.
+
