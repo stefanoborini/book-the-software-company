@@ -303,3 +303,18 @@ Hiring is broken. what you need is people with two characteristics:
 - specific knowledge: develops fast
 - domain understanding: can communicate to the rest of the company and understand the customer's requirements.
 
+The following hiring techniques are used today:
+
+- Which universities they attended, and their score.
+- Which companies they worked for.
+- Ask them for references, or investigate for references.
+- Give them take home projects to finish in a set amount of time.
+- Hire them as contractor temporarily
+- Ask them to talk about or show their past projects.
+- Ask them about details of the technologies they use
+- Give them quizzes or brain teasers.
+- Live coding
+- Pair program
+
+
+
