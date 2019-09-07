@@ -273,4 +273,47 @@ interview".
 
 - Push for consultants from Boeing https://www.bloomberg.com/news/articles/2019-06-28/boeing-s-737-max-software-outsourced-to-9-an-hour-engineers
 
+the problem is not the price of those engineers. The problem is that those engineers probably had no idea what they were doing,
+because intimate knowledge of a system is not something that is easily earned.
 
+I've seen something that might be in the same line of evolution. Consultants are given a job they knew nothing about. 
+Probably they even asked questions, but the one responsible was too busy, or he didn't speak English, or the consultant didn't speak it,
+There were piles of documentation, but written by someone who had no idea of the system either, and just aggregated a bunch of knowledge
+collected here and there by colleagues who are left of a group who lost 60% of its workforce so the remaining ones know little of
+the actual code. Maybe they are even using some hardware, and the hardware manufacturer doesn't provide any information on
+corner cases or known bugs. And the documentation is huge, so huge that only if you spent a year on it you would start to orient
+yourself, but no, you have to deliver in 3 months. And when you do, the software you make will be handed out to an
+internal team in the company who is a bunch of junior developers who never developed in that language before, and it will
+be up to them to fix bugs in a complex system they know nothing about with the deadline being yesterday because the manufacturer
+must have everything ready or they will twiddle their thumbs and we'll have to pay a fine for each day they do so.
+
+The point is that companies don't want senior engineers because they are expensive, but they are expensive for a reason: they have seen  
+things, and they know where things are, how things work, how they interact. I do believe what Rabin said, quoting
+
+“I was shocked that in a room full of a couple hundred mostly senior engineers we were being told that we weren’t needed”
+
+Because the product was considered mature, and I believe him because I have
+seen it in other companies during my career.
+
+
+
+Hiring is broken. what you need is people with two characteristics:
+
+- fundamental skills: provides sustainable solutions
+- specific knowledge: develops fast
+- domain understanding: can communicate to the rest of the company and understand the customer's requirements.
+
+The following hiring techniques are used today:
+
+- Which universities they attended, and their score.
+- Which companies they worked for.
+- Ask them for references, or investigate for references.
+- Give them take home projects to finish in a set amount of time.
+- Hire them as contractor temporarily
+- Ask them to talk about or show their past projects.
+- Ask them about details of the technologies they use
+- Give them quizzes or brain teasers.
+- Live coding
+- Pair program
+
+Link: https://software.rajivprab.com/2019/07/27/hiring-is-broken-and-yours-is-too/

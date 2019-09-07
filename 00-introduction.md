@@ -7,10 +7,10 @@ nav_order: 0
 
 I wrote this book as a reaction to the perceived misunderstanding of companies, 
 especially manufacturing companies, when it comes to integrating with a software
-division. It might have a partial or inaccurate view, but my aim is to report a
+division. I might have a partial or inaccurate view, but my aim is to report my
 general perception of a problem, and the effort of these pages is to motivate
-some decision makers to realise there's a new facet of modern industry that needs
-attention. I therefore define the following:
+some decision-makers to realise there's a new facet of modern industry that needs
+special attention as it behaves according to new rules. I therefore define the following:
 
 **Software company**: a company or institution developing software, regardless if
 software is their end product or not. 
