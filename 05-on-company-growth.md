@@ -317,3 +317,6 @@ The following hiring techniques are used today:
 - Pair program
 
 Link: https://software.rajivprab.com/2019/07/27/hiring-is-broken-and-yours-is-too/
+
+
+Horrible HR tools: fill CV, keyword matching
