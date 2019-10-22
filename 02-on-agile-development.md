@@ -3,11 +3,42 @@ nav_order: 2
 ---
 # 2 On Agile Development
 
-Agile is great. It's an excellent way to work. Unfortunately there's a strong
-disconnection between what Agile methodologies are and *what people think*
-Agile methodologies are. I've seen plenty of mistakes of companies pretending
-to use Agile, while in fact they use waterfall or cowboy coding, or completely
-neglect the advantages of Agile by compromising its assumptions.
+Agile is a set of guidelines on how to deliver quality software, skipping unproductive
+parts that do not deliver value and focusing on a fast release cycle. On paper,
+it's an excellent way to get things done. Unfortunately, no plan can face direct
+conflict with reality.
+
+There are many implementation of development methodologies that follow Agile principles
+the most commonly used is probably Scrum. As an implementation, it details specific guidelines
+on how to organise your workday, as well as the general flow of information and execution
+within the development team. 
+
+I am going to analyse Agile practices under two aspects: management, and technical.
+Agile practices has a strong consequences on both.
+
+The first problem Unfortunately there's a strong
+disconnection between what Agile methodologies are and what people think they
+are.  I've seen plenty of mistakes of companies pretending or claiming to use
+Agile, while in fact they use waterfall or cowboy coding, or completely neglect
+the advantages of Agile by compromising its assumptions.
+
+I suspect that what happens is more or less this: upper management and executives
+decide to "go agile" because someone sold them the idea that it's a better and faster way to
+achieve results. Lower management and teams realise that in order to do agile,
+they would need not only to rewire how the external interactions work, but also their framework
+against the "accepted company practices" in terms of deadlines, meeting schedules, manufacturing process,
+stakeholder availability, and Gantt charting labeling from upper management. In addition to that, 
+fundamental tools such as information emitters are not available, nor are
+whiteboards or walls to arrange post-its, or closeness of the team members.
+The result is that:
+
+- executives and upper management claim they are doing agile while in reality they are not. This percolates to job announcements from HR.
+- middle and low management believe agile doesn't work or cannot work (if
+  uninformed or inexperienced), or that what they are doing is not agile but a
+  hodgepodge of tragedy (if informed)
+- team is caught in the mess that originates from this, and starts to either dismiss agile practices or quit altogether.
+
+
 
 The best way to explain these mistakes is by giving actual examples, and
 explain what assumptions are violated and what is the consequences of violating
