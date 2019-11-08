@@ -15,13 +15,13 @@ software. You need to handle the software production chain, which generally can
 be represented as follows:
 
 - handling of the runtime the software depends on (compilers, libraries etc).
-- software, its creation and its maintenance
-- documentation of the software
-- testing of the software
+- creation of the software product.
+- documentation of the software product.
+- testing of the software product.
 - handling of the infrastructure to perform testing, possibly hardware.
-- versions and releases of the software, and their interactions.
-- deployment of the software, either in house, off-site (e.g. with third parties), or in the cloud.
-- interaction of the software with your core business
+- handling the strategy for versioning and releases of the software, and their interactions.
+- deployment of the software product, either in house, off-site (e.g. with third parties), or in the cloud.
+- interaction of the software product with your core business.
 - interaction of software development process with your core business process.
 
 We will investigate each of these points in more details.
@@ -42,27 +42,27 @@ bugs, any backward compatibility breakages, platform inconsistencies or
 differences and so forth. This is not only a loose recommendation, it is an
 actual regulatory requirement in some industries, and a massive one in some
 cases where human life may be in danger. Even when not a regulatory
-requirement, not organising your runtime will eventually lead to broken
-installations with hard to reproduce, random crashes, or unexpected bugs
-appearing or reappearing.
+requirement, failing to organise your runtime will eventually lead to broken
+installations with hard to reproduce bugs or random crashes.
 
 You therefore need a proper process in place to manage, build, maintain,
 deliver, update, and track your runtime effectively, and ensure that your
-company uses your runtime's software packages, and not else.
+company uses your runtime's software packages.
 
 # Creating and maintaining the software
 
-On top of the runtime, you create your software. Creating software goes well beyond the
-writing of code. Code, in fact, can be said to be almost the trivial part. The surronding 
-infrastructure needed to create production-ready code is large and pretty much required with
-no exceptions. The following components are needed:
+On top of the runtime, you create your software product. Creating software goes
+well beyond the writing of code. Code, in fact, can be said to be almost the
+trivial part. The surronding infrastructure needed to create production-ready
+code is large and pretty much required with no exceptions. The following
+components are needed:
 
 - A version control system to keep track of changes and allow developers to modify the code
 in an organised and reliable way.
 - A bug tracking system to ensure that defects are recorded, tracked, and addressed.
 - A process tracking system, to ensure that features are properly recorded, prioritised,
 and managed within a team or across teams, as well as managing official releases timelines.
-- An IDE that simplifies coding and provides support during coding, refactoring, testing, and debugging.
+- An IDE that simplifies and provides support for coding, refactoring, testing, and debugging.
 - Quality assurance tools such as linting and code review to allow for
   automatic and manual feedback, as well as approval of changes.
 
@@ -71,7 +71,7 @@ considerale attention and skills. While some improvisation and liberties can be
 taken at a very small scale, even a single developer will eventually need all
 of the above.
 
-Creating the software will also require support programs such as sketching
+Creating software will also require support programs, such as sketching
 applications to visualise user interface prototypes, and physical objects such
 as whiteboards, post-its, screens to show various types of information, from
 technical (build status, performance records, failure rates) to management
@@ -80,25 +80,34 @@ technical (build status, performance records, failure rates) to management
 
 # Documenting the software
 
-Software is useless if not properly documented. A large number of software packages 
-have gained massive market share also due to an effective and punctual documentation.
-Even if the software is for internal use only, effective documentation minimises chances
-of error and delivers transfer of knowledge from one team to another. In some cases,
-documentation might be a legal or regulatory requirement as well, and must comply with these
-practices.
+Software is useless to others if not properly documented. A large number of
+software packages have gained massive market share also due to an effective and
+punctual documentation.  Even if the software is for internal use only,
+effective documentation minimises chances of error and delivers transfer of
+knowledge from one team to another. In some cases, documentation might be a
+legal or regulatory requirement as well, and must comply with these practices.
 
-Documentation in general has different level of scope in software, and is addressed to different
-actors. Typically the actors are the user, who is interested in using a given component,
-and the developer, who is interested in developing it. The first needs to know how to deploy
-and install either a released or a development level version of the software. Generally, the user
-will deploy the component in an already configured system or environment, which must be clearly
+Documentation in general has different level of scope in software, and is
+addressed to different actors:
+
+- the user, who is anybody interested in simply using a given component.
+  This might be the end user, in case of an application, or a software developer
+  that uses this component for another software
+- and the developer, who is interested in developing the component itself.
+
+The user needs to know how to deploy and install either a released or a
+development level version of the software. Generally, the user will deploy the
+component in an already configured system or environment, which must be clearly
 described in the documentation.
 
-On the other hand, the developer needs a lot more details, such as the required tools and environment
-for development, how to setup local testing, code conventions and best practices followed, overall design and
-code organization, build scripts, external dependencies and libraries (and the aforementioned runtime).
-When into the code, the developer needs to know details about subsystems, classes (in particular their interface
-and state), and functions (typically their parameters, returned values, side effects and computational cost)
+On the other hand, the developer needs a lot more details, such as the required
+tools and environment for development, how to setup local testing, code
+conventions and best practices followed, overall design and code organization,
+build scripts, external dependencies and libraries (and the aforementioned
+runtime).  When into the code, the developer needs to know details about
+subsystems, classes (in particular their interface and state), and functions
+(typically their parameters, returned values, side effects and computational
+cost)
 
 All of this requires support tools. Inline code documentation can be extracted
 to generate reference documents.  Documentation of design needs UML modeling
@@ -107,17 +116,41 @@ and it must be directly connected to the version of the code it refers to.
 
 # Testing the software
 
-No software can be produced without bugs. Software will need to be tested at different
-levels, from individual routines and classes, to their integration, up to the final application
-deployment, usage, and functional behavior on all the targeted platforms. Tools such as unit test
-runners, mock libraries, performance evaluation and memory leak detection are needed to ensure quality.
-When the software controls physical hardware, testing also requires the presence of rigs
-specifically designed to service test operations. 
+No software can be produced without bugs. Software will need to be tested at
+different levels, from individual routines and classes, to their integration,
+up to the final application deployment, usage, and functional behavior on all
+the targeted platforms. Tools such as unit test runners, mock libraries,
+performance evaluation and memory leak detection are needed to ensure quality.
+When the software controls physical hardware, testing also requires the
+presence of rigs specifically designed to service test operations and emulators.
+Hardware testing rigs may require special attention for the testing setup, 
+and might require, for example, firmwares specifically designed for testing.
+
+Tests will have to be classified according to different criteria, for example
+if they take a long time, or if they require a specific platform or hardware
+rig. Tests should be fully automatic, so an additional need might be to
+eliminate or work around steps that are supposed to require human interaction
+without compromising the nature of the test itself.
 
 # Handling the testing infrastructure
 
-- A test infrastructure that verifies the functionality and soundness of the committed code to ensure
-quality.
+Testing will be executed by different actors, some of them humans, other ones computers.
+Typically, the human will run unit tests on its machine to remove trivial mistakes and check
+overall soundness of the subsystem it is working on, but in a large system, testing may take
+time or required infrastructure that the single developer might not have or be willing to provide.
+For this reason, a testing infrastructure takes care of running the tests at various stages of
+integration.
+
+This infrastructure must be automatic, reliable and fast. If a user creates a new change,
+the infrastructure must provide a quick evaluation of the correctness of the tests associated
+to the change with no intervention from the user. Periodically, it also has to execute more complex
+tests, dispatching the test execution to the appropriate machine out of a pool
+of executors, keeping into account parameters such as:
+
+- machine properties: operating system, memory, graphics adapter.
+- process load: assign the execution of testing so that machines are properly balanced
+- attached rigs: machines that provide access to hardware rigs should only run tests that are actually using these rigs.
+- cost: depending on the testing infrastructure, an excessive availability of executors can increase costs due to licensing terms.
 
 # Handing the network and cloud infrastructure
 
