@@ -3,10 +3,14 @@ nav_order: 2
 ---
 # 2 On Agile Development
 
-Agile is a set of guidelines on how to deliver quality software, skipping unproductive
-parts that do not deliver value and focusing on a fast release cycle. On paper,
-it's an excellent way to get things done. Unfortunately, no plan can face direct
-conflict with reality.
+Agile is a set of guidelines on how to deliver quality software, skipping
+unproductive parts that do not deliver value and focusing on a fast release
+cycle. On paper, it's an excellent way to get things done. Unfortunately, no
+plan can face direct conflict with reality.
+
+Don't get me wrong, I am a strong agile supporter and Certified Scrum Master.
+What I mean is that the whole concept of Agile has been corrupted in its
+application.
 
 There are many implementation of development methodologies that follow Agile principles
 the most commonly used is probably Scrum. As an implementation, it details specific guidelines
