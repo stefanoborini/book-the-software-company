@@ -54,7 +54,7 @@ company. The implications are profound.
 
 Software adds new dimension to the first and second pillars of engineering:
 mechanical and electronical. However, it is uncanny how bad and mistreated
-software is, compared to its older sisters.
+software is, compared to its older counterparts.
 
 ![XKCD](https://imgs.xkcd.com/comics/voting_software.png)
 
