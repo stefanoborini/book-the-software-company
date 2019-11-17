@@ -154,7 +154,25 @@ of executors, keeping into account parameters such as:
 
 # Handing the network and cloud infrastructure
 
-databases (production, testing) 
+
+# Handling the database and general data storage
+
+Another critical component of the software company infrastructure is the database.
+This can hold from trivial addresses of your customer, to massive datasets about
+medical data, oil drilling, or pharmaceutical trial results. Some of these data may be 
+under specific regulatory requirements. All of them need a backup strategy.
+Some of them may need replication to ensure its reliable availability in case of
+failures or downtimes of the main server.
+
+Development of software accessing the database needs a platform similar to the
+live database for testing before deployment to the production database, therefore
+an additional testing database must exist. Similar considerations about regulatory requirements
+may apply to this database.
+
+Databases also generally require fine tuned access control, so that only the relevant parties have
+access to the contained data.
+
+schema migration strategy, downtime scheduling.
 
 # Version and release the software
 - A build infrastructure that creates software releases for final delivery.
