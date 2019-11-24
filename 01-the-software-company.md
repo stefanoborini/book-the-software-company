@@ -154,23 +154,32 @@ of executors, keeping into account parameters such as:
 
 # Handing the network and cloud infrastructure
 
+Every company needs a network, and networks are fragile, require configuration,
+protection from attack both from the inside and outside, and automation of common tasks
+such as addition and configuration of new hardware, centralised authentication of users
+and services, internal and guest wifi access, firewall settings. In addition to the internal
+network, cloud services such as AWS need to be considered, setup, administered, and accounted.
+
 
 # Handling the database and general data storage
 
-Another critical component of the software company infrastructure is the database.
-This can hold from trivial addresses of your customer, to massive datasets about
-medical data, oil drilling, or pharmaceutical trial results. Some of these data may be 
-under specific regulatory requirements. All of them need a backup strategy.
-Some of them may need replication to ensure its reliable availability in case of
-failures or downtimes of the main server.
+Another critical component of the software company infrastructure are databases in their various
+implementations and use.
+Typically, databases can hold from straightforward data such as addresses of
+your customer, to massive datasets about medical data, oil drilling, or
+pharmaceutical trial results. Some of these data may be under specific
+regulatory requirements. All of them need a backup strategy, because pretty
+much all of them are business critical and will disrupt your company if something goes
+wrong.  Some of them may need replication to ensure its reliable availability
+in case of failures or downtimes of the main server.
 
 Development of software accessing the database needs a platform similar to the
-live database for testing before deployment to the production database, therefore
-an additional testing database must exist. Similar considerations about regulatory requirements
-may apply to this database.
+live database for testing before deployment to the production database,
+therefore an additional testing database must exist. Similar considerations
+about regulatory requirements may apply to this database.
 
-Databases also generally require fine tuned access control, so that only the relevant parties have
-access to the contained data.
+Databases also generally require fine tuned access control, so that only the
+relevant parties have access to the contained data.
 
 schema migration strategy, downtime scheduling.
 
