@@ -154,6 +154,8 @@ of executors, keeping into account parameters such as:
 
 # Handing the network and cloud infrastructure
 
+firewall configuration
+
 
 # Handling the database and general data storage
 
