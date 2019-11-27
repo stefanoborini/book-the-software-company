@@ -160,7 +160,6 @@ such as addition and configuration of new hardware, centralised authentication o
 and services, internal and guest wifi access, firewall settings. In addition to the internal
 network, cloud services such as AWS need to be considered, setup, administered, and accounted.
 
-
 # Handling the database and general data storage
 
 Another critical component of the software company infrastructure are databases in their various
