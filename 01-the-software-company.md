@@ -180,9 +180,12 @@ about regulatory requirements may apply to this database.
 Databases also generally require fine tuned access control, so that only the
 relevant parties have access to the contained data.
 
-schema migration strategy, downtime scheduling.
+Finally, an appropriate strategy must be in place for schema migration in case
+of changes in the stored data, as well as appropriate downtime scheduling to minimise
+disruption of operations.
 
 # Version and release the software
+
 - A build infrastructure that creates software releases for final delivery.
 - Version planning and release management to organise official releases
 
@@ -196,13 +199,83 @@ ACL).
 
 # Handle deprecation, upgrades and migration.
 
-of file formats, database schema changes.
+Once the software is released, a new challenge emerges: not only the software needs to be improved,
+but also old software needs to be supported. This support comes in many different forms:
+
+- support customers still using the old version
+- provide patches for both the old version and the new one.
+- support opening and writing of files produced by the old software version
+- handle migrations of database schemas without breaking old software.
+- if the software provides an API, extend or deprecate functionalities without
+  compromising old client code
+- if new hardware, operating systems or dependent libraries are to be supported,
+  potentially support different ABI or versions of the dependencies.
+
+
+Each of these cases has its own special challenges, complexities and remedies.
+Particular care must be taken, during implementation, not to enter into inescapable
+situations[^1]. Refactoring techniques for databases can be implemented to perform
+schema migrations, but proper care and support of advanced features (such as triggers and
+stored procedures) may be needed. 
+
+In other words, at every new release of the software, its surrounding environment acquires
+inertia, and changes must be considered not only within the framework of the software at
+that specific moment in time, but also its state in the past and its possible future. This add
+a potentially large burden that needs to be taken into account.
+
+
+[^1]: A real case scenario I've witnessed involved a file, written on customers
+computers, that had no version information. In these files, version 1 of the software
+wrote a date as day-month-year. Version 2 of the software wrote month-day-year. With a few
+exceptions of impossible cases, there is no practical way to differentiate which format it is
+used. A hack was devised to piggyback on the presence of another unrelated information, 
+added in version 2 of the software, to assess the "informal" file format version. 
+When software version 3 was released, a version tag was added to the file.
+
 
 # Interaction of the software with the core business
 
-- In some cases, infrastructure for measuring performance, logging of events,
-  and watchdogs to ensure immediate response in case of failure.
+Software may be produced in support of a business need that involves measuring,
+event logging, and watchdogs to ensure immediate action in case of failure,
+notification of reduced performance, or unexpected behavior from software
+components deployed internally or externally to the business. Some businesses,
+in particular hardware manufacturers, may also want to report telemetry and
+usage statistics of the software component, for example to dispatch maintenance
+not only promptly, but with the right replacement parts. All this
+infrastructure needs to be maintaned and made reliable across timezones and
+patterns of use.
 
 # Interaction with the development process with the core business process
 
+Finally, one must also integrate the software development lifecycle with the
+rest of the business, especially when the business product has high lead times
+(as in the case of mechanical and electronic products), or has strict
+regulatory requirements, such as in the case of medical or aeronautical
+industry. Electronic or mechanical support for a feature might come after a few
+months of CAD/EDA work, manufacturing, and physical assembling, while software
+support for the added feature can in some cases be ready within a week or two.
+However, software development might need the real hardware to test and evaluate
+the functionality, and will in fact act as the entry point for further testing
+of the whole feature not only at the software level, but at the electronic and
+mechanical level. Correct prioritization and scheduling must be organised to
+handle the different development cycles and process heartbeats of each division within
+the company.
+
+# Conclusions 
+
+This chapter wanted to bring attention to the following core points: 
+
+1. Any company that writes code is a software company, regardless if its final
+business product is software or not.  
+2. Being a software company introduces a large number of aspects that need to
+be considered to deliver and keep delivering an effective end product.
+
+These points may seem trivial and straightforward to software-oriented readers,
+but from my experience a large number of companies developing non-software
+products do not believe themselves as software companies. With point 1
+dismissed, these companies create a scenario where point 2 is ignored as well,
+creating a situation where software and its crafters are relegated to an
+unheard voice, with paper thin resources huge technical burdens and a fragile,
+unreliable infrastructure that is keeping the whole business hanging by the
+threads.
 
