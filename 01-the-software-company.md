@@ -6,38 +6,42 @@ nav_order: 1
 As we established in the introduction, if your company creates software of any
 kind, from basic scripts to complex applications, it is a software company.  It
 is irrelevant that its core business is not software. While this seems to be a
-trivial point to make, my personal experience with multiple companies from
-manufacturing to pharmaceuticals points at how often this fundamental concept
+trivial point to make, my experience with multiple companies (ranging from
+manufacturing to pharmaceuticals) points at how often this fundamental concept
 is downplayed.
 
 A software company carries a set of requirements to meet the goals of handling
-software. You need to handle the software production chain, which generally can
-be represented as follows:
+both the software product and the software production chain, which generally
+can be represented as follows:
 
-- handling of the runtime the software depends on (compilers, libraries etc).
-- creation of the software product.
-- documentation of the software product.
-- testing of the software product.
-- handling of the infrastructure to perform testing, possibly hardware.
-- handling the strategy for versioning and releases of the software, and their interactions.
-- deployment of the software product, either in house, off-site (e.g. with third parties), or in the cloud.
-- interaction of the software product with your core business.
-- interaction of software development process with your core business process.
+1. handling of the runtime the software depends on (compilers, libraries etc).
+2. creation of the software product.
+3. documentation of the software product.
+4. testing of the software product.
+5. handling of the infrastructure to perform testing, including hardware fixtures required for such task.
+6. handling auxilliary entities such as network, database, file storage.
+6. handling the strategy for versioning and releases of the software, and their interactions.
+7. deployment of the software product, either in house, off-site (e.g. with third parties), or in the cloud.
+8. interaction of the software product with the core business.
+9. interaction of software development process with the core business process.
 
 We will investigate each of these points in more details.
 
-# Handling the runtime
+# 1.1 Handling the runtime
 
 When you want to develop some software, you have to rely on external components
-of various nature, such as interpreters, compilers, or libraries. These
-components are either commercial products or opensource, and have different
-level of quality, documentation, bug tracking and user support. They might be
-pre-built as a binary, or need to be built from source within your company,
-therefore needing a well-known, reproducible build chain to ensure the quality
-and reliability of the resulting artefact. 
+of various nature, such as interpreters, compilers, or libraries. All together, these
+components form your runtime. Your product has either direct or indirect dependencies
+against this runtime, so that it cannot run without it.
 
-If you want a running product, you need to take care of your runtime as if it
-were a product in itself. You must keep track of its changes, its affecting
+The components forming the runtime are either commercial products or
+opensource, and have different level of quality, documentation, bug tracking
+and user support. They might be pre-built as a binary, or need to be built from
+source within your company, therefore needing a well-known and reproducible
+build chain to ensure the quality and reliability of the resulting artefact. 
+
+If you want a running software product, you must take care of its runtime as if
+it were a product in itself. You must keep track of its changes, its affecting
 bugs, any backward compatibility breakages, platform inconsistencies or
 differences and so forth. This is not only a loose recommendation, it is an
 actual regulatory requirement in some industries, and a massive one in some
@@ -46,72 +50,70 @@ requirement, failing to organise your runtime will eventually lead to broken
 installations with hard to reproduce bugs or random crashes.
 
 You therefore need a proper process in place to manage, build, maintain,
-deliver, update, and track your runtime effectively, and ensure that your
-company uses your runtime's software packages.
+deliver, update, and track your runtime components effectively, and ensure that
+your company uses your runtime's software packages.
 
 # Creating and maintaining the software
 
 On top of the runtime, you create your software product. Creating software goes
-well beyond the writing of code. Code, in fact, can be said to be almost the
-trivial part. The surronding infrastructure needed to create production-ready
+well beyond writing its code. Code, in fact, can be said to be almost the
+trivial part. The surrounding infrastructure needed to create production-ready
 code is large and pretty much required with no exceptions. The following
 components are needed:
 
-- A version control system to keep track of changes and allow developers to modify the code
+1. A version control system to keep track of changes and allow developers to modify the code
 in an organised and reliable way.
-- A bug tracking system to ensure that defects are recorded, tracked, and addressed.
-- A process tracking system, to ensure that features are properly recorded, prioritised,
-and managed within a team or across teams, as well as managing official releases timelines.
-- An IDE that simplifies and provides support for coding, refactoring, testing, and debugging.
-- Quality assurance tools such as linting and code review to allow for
-  automatic and manual feedback, as well as approval of changes.
+2. A bug tracking system to ensure that defects are recorded, tracked, and addressed.
+3. A process tracking system, to ensure that features are properly recorded, prioritised,
+   and managed within a team or across teams, as well as managing official releases timelines.
+4. An IDE that simplifies and provides support for coding, refactoring, testing, and debugging.
+5. Quality assurance tools such as linting and code review to allow for
+   automatic and manual feedback, as well as approval of changes.
 
 As you can see, the amount of infrastructure needed keeps growing, and requires
-considerale attention and skills. While some improvisation and liberties can be
+considerable attention and skills. While some improvisation and liberties can be
 taken at a very small scale, even a single developer will eventually need all
 of the above.
 
 Creating software will also require support programs, such as sketching
-applications to visualise user interface prototypes, and physical objects such
-as whiteboards, post-its, screens to show various types of information, from
-technical (build status, performance records, failure rates) to management
-(process track, burndown charts). 
-
+applications to visualise user interface prototypes, as well as physical
+objects such as whiteboards, post-its, screens to show various types of
+information, from technical (build status, performance records, failure rates)
+to management (process track, burndown charts). 
 
 # Documenting the software
 
-Software is useless to others if not properly documented. A large number of
-software packages have gained massive market share also due to an effective and
+Software is useless to others if not properly documented. A number of software
+packages have gained massive market share also thanks to an effective and
 punctual documentation.  Even if the software is for internal use only,
 effective documentation minimises chances of error and delivers transfer of
 knowledge from one team to another. In some cases, documentation might be a
 legal or regulatory requirement as well, and must comply with these practices.
 
-Documentation in general has different level of scope in software, and is
-addressed to different actors:
+Documentation in general has different level of scope, depending on the final
+target: 
 
-- the user, who is anybody interested in simply using a given component.
+- the **User**, who is anybody interested in simply using a given component.
   This might be the end user, in case of an application, or a software developer
-  that uses this component for another software
-- and the developer, who is interested in developing the component itself.
+  that uses this component within another software product.
+- the **Developer**, who is interested in developing the component itself.
 
-The user needs to know how to deploy and install either a released or a
-development level version of the software. Generally, the user will deploy the
+The User needs to know how to deploy and install either a released or a
+development level version of the software. Generally, the User will deploy the
 component in an already configured system or environment, which must be clearly
 described in the documentation.
 
-On the other hand, the developer needs a lot more details, such as the required
+On the other hand, the Developer needs a lot more details, such as the required
 tools and environment for development, how to setup local testing, code
 conventions and best practices followed, overall design and code organization,
 build scripts, external dependencies and libraries (and the aforementioned
-runtime).  When into the code, the developer needs to know details about
-subsystems, classes (in particular their interface and state), and functions
-(typically their parameters, returned values, side effects and computational
-cost)
+runtime). The Developer needs to know details about subsystems, classes (in
+particular their interface and state), and functions (typically their
+parameters, returned values, side effects and computational cost)
 
 All of this requires support tools. Inline code documentation can be extracted
-to generate reference documents.  Documentation of design needs UML modeling
-tools. Documentation must be reachable and searchable, potentially online,
+to generate reference documents. Documentation of design needs UML modeling
+tools. Documentation must also be reachable and searchable, potentially online,
 and it must be directly connected to the version of the code it refers to.
 
 # Testing the software
@@ -122,15 +124,40 @@ up to the final application deployment, usage, and functional behavior on all
 the targeted platforms. Tools such as unit test runners, mock libraries,
 performance evaluation and memory leak detection are needed to ensure quality.
 When the software controls physical hardware, testing also requires the
-presence of rigs specifically designed to service test operations and emulators.
-Hardware testing rigs may require special attention for the testing setup, 
-and might require, for example, firmwares specifically designed for testing.
+presence of testing rigs specifically designed to service test operations and
+emulators. Hardware testing rigs may require special attention for the testing
+setup, and might require, for example, firmwares specifically designed for
+testing.
+
+Success of tests must be quiet. A successful execution should not notify the developer,
+and the resulting log should be compact and void of output. Therefore,
+appropriate capturing of output must be performed. Tests should also ensure
+that the testing system is left in a state that is correct and ready to operate
+again, regardless if they succeed or fail.
+
+When test fails, the failure must be:
+- reproducible: tests must be written so that they ensure the failure is visible at every invocation. Lack of reproducibility may indicate both a code bug, or a poorly implemented test.
+- precise: the failure must indicate exactly where the problem has been found.
+- punctual: the failure reason must be clear.
+- immediate: the delay between the developer committing the code and the tests to execute fully must be as short as possible.
+- noisy: the failure must be obvious, and produce as much information as possible in order to understand the context that generated the failure.
+
+To reduce confusion among developers and excess of inbox noise, only the person implied in the failure should be notified of it. 
 
 Tests will have to be classified according to different criteria, for example
-if they take a long time, or if they require a specific platform or hardware
-rig. Tests should be fully automatic, so an additional need might be to
+if they take a long time, or require a specific platform or hardware
+rig. They should be fully automatic, so an additional need might be to
 eliminate or work around steps that are supposed to require human interaction
 without compromising the nature of the test itself.
+
+Typically, the tests will be executed with different frequencies according to
+the above classification. Short, focused unit tests and integration tests may
+be performed once per commit or once per development branch. Longer tests may
+be executed every night, or as often as possible in a queue.
+
+All the above requirements are addressed through proper infrastructure, proper
+analysis of the tests cost and benefits, and good programming practices.
+ 
 
 # Handling the testing infrastructure
 
@@ -141,7 +168,7 @@ time or required infrastructure that the single developer might not have or be w
 For this reason, a testing infrastructure takes care of running the tests at various stages of
 integration.
 
-This infrastructure must be automatic, reliable and fast. If a user creates a new change,
+This infrastructure must be automatic, reliable and fast. As said above, if a user creates a new change,
 the infrastructure must provide a quick evaluation of the correctness of the tests associated
 to the change with no intervention from the user. Periodically, it also has to execute more complex
 tests, dispatching the test execution to the appropriate machine out of a pool
@@ -155,10 +182,24 @@ of executors, keeping into account parameters such as:
 # Handing the network and cloud infrastructure
 
 Every company needs a network, and networks are fragile, require configuration,
-protection from attack both from the inside and outside, and automation of common tasks
-such as addition and configuration of new hardware, centralised authentication of users
-and services, internal and guest wifi access, firewall settings. In addition to the internal
-network, cloud services such as AWS need to be considered, setup, administered, and accounted.
+protection from attack both from the inside and outside, and automation of common tasks.
+
+Typically, the following tasks will be crucial:
+
+- addition, configuration and removal of new hardware, either server, developer laptops, or other departments' laptops.
+- centralised authentication of users and services
+- internal and guest wifi access
+- firewall settings.
+- internal network routing
+- setup of VPN for employees that need to work from remote, and among company branches.
+- setup and maintenance of cellphones.
+- setup and configuration of cloud services such as AWS
+
+The keyword for network management is heterogeneity, and with it comes the need
+for specialised training and impedance mismatch between technologies that
+require custom solutions and scripts. As usual, regulatory requirements may add 
+more complexity to the administration of the network, in particular when it comes to
+confidentiality, data protection, and auditing.
 
 # Handling the database and general data storage
 
@@ -224,13 +265,7 @@ that specific moment in time, but also its state in the past and its possible fu
 a potentially large burden that needs to be taken into account.
 
 
-[^1]: A real case scenario I've witnessed involved a file, written on customers
-computers, that had no version information. In these files, version 1 of the software
-wrote a date as day-month-year. Version 2 of the software wrote month-day-year. With a few
-exceptions of impossible cases, there is no practical way to differentiate which format it is
-used. A hack was devised to piggyback on the presence of another unrelated information, 
-added in version 2 of the software, to assess the "informal" file format version. 
-When software version 3 was released, a version tag was added to the file.
+[^1]: A real case scenario I've witnessed involved a file, written on customers computers, that had no version information. In these files, version 1 of the software wrote a date as day-month-year. Version 2 of the software wrote month-day-year. With a few exceptions of impossible cases, there is no practical way to differentiate which format it is used. A hack was devised to piggyback on the presence of another unrelated information, added in version 2 of the software, to assess the "informal" file format version.  When software version 3 was released, a version tag was added to the file.  
 
 
 # Interaction of the software with the core business
