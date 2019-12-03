@@ -227,21 +227,67 @@ disruption of operations.
 
 # Version and release the software
 
-- A build infrastructure that creates software releases for final delivery.
-- Version planning and release management to organise official releases
+Software development moves from release to release, and coordination of the release process
+is fundamental to keep order. THe release process must be reproducible and as automatic as possible.
+Ideally, every new build having passing tests is a new release that is ready to be used.
+
+Releasing need both human and machine support. Machines need to be set up to
+build the software and create the releaseable entity, typically on multiple
+platforms. Once the build process is performed, the created release is deployed
+to a reachable area, such as an artifact storage, where it's made available for the
+final smoke test of deployment, either automated or manually driven. 
+
+Once the releaseable entity is created and tested, humans need to be involved
+for both technical and business tasks, such as: 
+
+1. A decision must be taken about the new version number, typically in agreement to semantic versioning guidelines.
+1. Release notes must be written, collecting the changes in the new version.
+2. The version control system revision must be tagged on the build corresponding to the release.
+3. The final releaseable entity must be deployed somewhere accessible to the interested parties.
+4. Interested parties must be notified of the new version, and where it can be found.
+
+Interested parties may now act on the release, typically upgrading, and
+potentially incurring in unexpected problems. Therefore, some care needs to be
+taken when releasing before festivities, in order not to leave customers
+without support in case of issues. If the released entity is a dependency of
+another software product, this software's build process must now include the
+updated dependency. 
 
 # Deploy the software
 
-- Storage of built code, also known as artifacts.
+As already mentioned, released software is generally deployed on some form of storage
+endpoint, which can vary between the trivial webpage, to a more powerful artifact storage.
+Regardless of the storage solution, deployment is the final step that brings the software
+product onto the customer's computer. 
 
-creating installation scripts that are adequate for the target platform, smooth out
-unexpected circumstances and differences in the target machine (proxy, antivirus, 
-ACL).
+One important distinction is between web applications, where the deployment
+happens on computers controlled by the company, and desktop applications, where
+the deployment happens on machines that the company generally does not control. 
+
+In the first case, the deployment happens following the procedure for the cloud
+or service provider of choice, and might require an intricate coordination between the
+development team and the DevOps team to deploy the new component without
+compromising the current network of services.
+
+For the second case, heterogeneity is the major problem of these deployments,
+and issues may emerge due to interaction of the software with old operating
+systems versions, specific hardware configuration, presence of enhanced
+security policies, firewalls, or antiviruses, or unorthodox setups. These unexpected
+circumstances will inevitably lead to support requests and bug reports that
+will form the bulk of the subsequent patch release.
+
+Instances where the company controls desktop machines do exist, but they tend
+to be limited to those cases where the company deploys a turnkey solution with
+a standardised environment, and preserves full control of the machine through
+its lifetime. A typical scanario is a machine controlling high end hardware
+(such as a robot or CNC machine), or machines used to assist the operations of
+departments of the company itself.
 
 # Handle deprecation, upgrades and migration.
 
-Once the software is released, a new challenge emerges: not only the software needs to be improved,
-but also old software needs to be supported. This support comes in many different forms:
+Once the software is released and deployed, a new challenge emerges: not only
+the software needs to be improved, but also old software releases must be
+supported. This support comes in many different forms:
 
 - support customers still using the old version
 - provide patches for both the old version and the new one.
@@ -251,7 +297,6 @@ but also old software needs to be supported. This support comes in many differen
   compromising old client code
 - if new hardware, operating systems or dependent libraries are to be supported,
   potentially support different ABI or versions of the dependencies.
-
 
 Each of these cases has its own special challenges, complexities and remedies.
 Particular care must be taken, during implementation, not to enter into inescapable
@@ -310,7 +355,7 @@ but from my experience a large number of companies developing non-software
 products do not believe themselves as software companies. With point 1
 dismissed, these companies create a scenario where point 2 is ignored as well,
 creating a situation where software and its crafters are relegated to an
-unheard voice, with paper thin resources huge technical burdens and a fragile,
+unheard voice, with paper thin resources, huge technical burdens and a fragile,
 unreliable infrastructure that is keeping the whole business hanging by the
 threads.
 
