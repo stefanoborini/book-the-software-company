@@ -318,5 +318,50 @@ The following hiring techniques are used today:
 
 Link: https://software.rajivprab.com/2019/07/27/hiring-is-broken-and-yours-is-too/
 
+       Joel Test
+    1. Do you use source control?
+    2. Can you make a build in one step?
+    3. Do you make daily builds?
+    4. Do you have a bug database?
+    5. Do you fix bugs before writing new code?
+    6. Do you have an up-to-date schedule?
+    7. Do you have a spec?
+    8. Do programmers have quiet working conditions?
+    9. Do you use the best tools money can buy?
+    10. Do you have testers?
+    11. Do new candidates write code during their interview?
+    12. Do you do hallway usability testing?
+
+Borini test
+
+1. Do you understand the principles of Agile software development of incremental delivery of prioritised features?
+
+2. Is the team consistent and committed over multiple sprints?
+
+3. Is the team made of complementary skillset?
+
+4. is the team part of the interviewing process?
+
+5. Is the product owner available throughout the sprint?
+
+6. Do you have a company process/organisation backlog?
+
+7. Is the team colocated?
+
+8. Are there whiteboards?
+
+9. Do you have a stable velocity?
+
+10. Do you identify and mitigate risk?
+
+11. Do developers have access to hardware and space for their technical needs?
+
+Questions:
+
+In which project would I be involved with and at which level my skills would be beneficial?
+
+What are the current challenges in terms of team organisation that I can contribute to analyse and solve?
+
+How many scrum teams do you have and how do they interact and coordinate?
 
 Horrible HR tools: fill CV, keyword matching
