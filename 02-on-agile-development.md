@@ -5,12 +5,40 @@ nav_order: 2
 
 Agile is a set of guidelines on how to deliver quality software, skipping
 unproductive parts that do not deliver value and focusing on a fast release
-cycle. On paper, it's an excellent way to get things done. Unfortunately, no
-plan can face direct conflict with reality.
+cycle. The set of principles of Agile focus on lightweight processes, an incremental
+approach to software delivery, and a strong focus on people rather than paperwork.
+In other words, minimum viable burocracy to deliver minimum viable products in
+small, achievable and measurable steps.  On paper, it's an excellent way to get
+things done. Unfortunately, no plan can face direct conflict with reality.
+I've seen plenty of mistakes of companies pretending or claiming to use
+Agile, while in fact they use anything but Agile, completely neglecting 
+the advantages of Agile by compromising on its assumptions.
 
-Don't get me wrong, I am a strong agile supporter and Certified Scrum Master.
-What I mean is that the whole concept of Agile has been corrupted in its
-application.
+Don't get me wrong, I am a strong Agile supporter (and I put my money on it, as
+I have an Advanced Certified Scrum Master certification). What I mean is that
+the whole concept of Agile is often corrupted in its application by managers
+and executives due to the strong disconnection between what Agile methodologies
+are and what these people think they are. The typical scenario is the following: 
+upper management and executives decide to "go agile" because someone sold them
+the idea that it's a better and faster way to achieve results. Lower management
+and teams realise that in order to do agile, they would need not only to rewire
+how the external interactions work, but also their framework against the
+"accepted company practices" in terms of deadlines, meeting schedules,
+manufacturing process, stakeholder availability, and Gantt charting labeling
+from upper management. In addition to that, fundamental tools such as
+information emitters are not available, nor are whiteboards or walls to arrange
+post-its, or closeness of the team members.
+The result is that:
+
+1. executives and upper management claim they are doing agile while in reality the company is not. 
+   This percolates to job announcements from HR.
+2. middle and low management (if uninformed or inexperienced) are led to believe Agile doesn't work or cannot work
+   or (if informed) that what the company is doing is not Agile, but a hodgepodge of tragedy.
+3. team is caught in the mess that originates from this, and starts to either dismiss Agile practices or quit altogether.
+
+
+So much for the high level view. Going into more detail, 
+
 
 There are many implementation of development methodologies that follow Agile principles
 the most commonly used is probably Scrum. As an implementation, it details specific guidelines
@@ -20,27 +48,8 @@ within the development team.
 I am going to analyse Agile practices under two aspects: management, and technical.
 Agile practices has a strong consequences on both.
 
-The first problem Unfortunately there's a strong
-disconnection between what Agile methodologies are and what people think they
-are.  I've seen plenty of mistakes of companies pretending or claiming to use
-Agile, while in fact they use waterfall or cowboy coding, or completely neglect
-the advantages of Agile by compromising its assumptions.
 
-I suspect that what happens is more or less this: upper management and executives
-decide to "go agile" because someone sold them the idea that it's a better and faster way to
-achieve results. Lower management and teams realise that in order to do agile,
-they would need not only to rewire how the external interactions work, but also their framework
-against the "accepted company practices" in terms of deadlines, meeting schedules, manufacturing process,
-stakeholder availability, and Gantt charting labeling from upper management. In addition to that, 
-fundamental tools such as information emitters are not available, nor are
-whiteboards or walls to arrange post-its, or closeness of the team members.
-The result is that:
 
-- executives and upper management claim they are doing agile while in reality they are not. This percolates to job announcements from HR.
-- middle and low management believe agile doesn't work or cannot work (if
-  uninformed or inexperienced), or that what they are doing is not agile but a
-  hodgepodge of tragedy (if informed)
-- team is caught in the mess that originates from this, and starts to either dismiss agile practices or quit altogether.
 
 
 
