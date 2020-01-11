@@ -30,65 +30,118 @@ information emitters are not available, nor are whiteboards or walls to arrange
 post-its, or closeness of the team members.
 The result is that:
 
-1. executives and upper management claim they are doing agile while in reality the company is not. 
-   This percolates to job announcements from HR.
-2. middle and low management (if uninformed or inexperienced) are led to believe Agile doesn't work or cannot work
+1. Executives and upper management claim they are doing Agile while in reality
+   the company is not. This percolates to job announcements from HR.
+2. Middle and low management (if uninformed or inexperienced) are led to believe Agile doesn't work or cannot work
    or (if informed) that what the company is doing is not Agile, but a hodgepodge of tragedy.
-3. team is caught in the mess that originates from this, and starts to either dismiss Agile practices or quit altogether.
+3. Team is caught in the mess that originates from this, and starts to either
+   dismiss Agile practices or resign altogether.
 
-
-So much for the high level view. Going into more detail, 
-
+## Scrum
 
 There are many implementation of development methodologies that follow Agile principles
 the most commonly used is probably Scrum. As an implementation, it details specific guidelines
 on how to organise your workday, as well as the general flow of information and execution
 within the development team. 
 
-I am going to analyse Agile practices under two aspects: management, and technical.
-Agile practices has a strong consequences on both.
+For those unfamiliar with Scrum, the idea is to deliver the product
+incrementally in batches of work called Sprints (lasting from two to four weeks
+each), feature by feature, via the interaction of three entities: 
 
+1. The Product Owner (PO), who is a single person acting as a proxy for the
+   customer. The PO is responsible for the vision of the product and the priority of the features.
+2. The Scrum Team (ST), who estimates the effort required to deliver the
+   product increment satisfying the requests of the PO.
+3. the Scrum Master (SM), who is a single person organising and monitoring the Scrum process,
+   orchestrating the so-called Scrum "ceremonies" (aka meetings),
+   checking progress metrics and promoting the removal of impediments.
 
+Every project needs to satisfy the holy trinity of parameters: time, features
+and resources.  Mathematics teaches us that you can not enforce constraints on
+all three. If you have fixed resources (team, technical skills, development
+tools) and fixed time (deadline), the the features will need to be left
+floating. If on the other hand the project has fixed resources and fixed
+features, the flexibility is in the delivery time. You can't cheat this
+fundamental law of nature. Scrum defines a process that allows the PO to focus
+on what matters and promote the release of a working product at the end of
+every sprint.  While not perfect, this product focuses on the fundamental
+needs of the customer first.
 
+From what I have seen, Scrum works well in driving delivery, but has its drawbacks.
+Most of these drawbacks arise from three factors, two of which are not strictly Scrum's fault:
 
+1. Incorrect application of Scrum
+2. Scrum not being the right framework for the task.
+3. Scrum not being overly prescriptive on some crucial duties.
 
+## Incorrect Use of Scrum
 
-The best way to explain these mistakes is by giving actual examples, and
-explain what assumptions are violated and what is the consequences of violating
-those assumptions.
+As described in the chapter introduction, Scrum is often distorted because it doesn't 
+really fit with the preconceived method of development. This pressure comes from many different
+directions, and we will examine them as scenarios that I personally witnessed.
 
-## Scenario 1: use end of sprint as a deadline.
+### Scenario 1: Use end of sprint as a deadline.
 
-In some cases, the end of sprint is seen as an opportunity to enforce a deadline
+In this scenario, Scrum is understood not as an incremental process, but as the
+end of sprint as the deadline for the a fixed, non-negotiable effort. This
+leads to a situation where the Team has no control over the features to
+deliver, and no control over the time. As you can't cheat nature, 
+either the project will be late, or corners will be cut, generally in
+code quality and testing.
 
-Among the various issues I've seen happen in practice,
+### Scenario 2: Absentee Product Owner
 
-- people still involved in other tasks
-- short sprints and late planning.
-- end of sprints are not project deadlines.
-- sprints always leak
-- fluid teams aimed at the feature.
-- code quality in an agile mindset.
+There are issues to be solved, but nobody knows where they are. The product
+owner is not aware of being the product owner, and is unavailable for
+questions, being too busy. The team has to understand what needs to be done
+from the open story, but the request is unclear.
 
-## Scenario 2: Absentee product owner
-
-There are issues to be solved, but nobody knows where they are. The product owner is not aware of
-being the product owner, and is unavailable for questions, being too busy. The team has to understand 
-what needs to be done from the open story, but the request is unclear.
-
-## Scenario 3: Absentee team
+### Scenario 3: Absentee team
 
 The reverse of the above is when the team is unavailable to receive input from the product owner, normally
 because they are involved in other tasks, or the product owner keeps requesting a meeting between him
 and the team lead to "keep it short". The team lead now has to propagate the information from the product
 owner.
 
-## Scenario 4: Team has no idea of the application
+### Scenario 4: Team has no idea of the application
 
-Seen many times: the application has been developed by someone else, and has been dropped like a steaming pile
-of garbage on the team's table. The team, who knows nothing about the internals of the application, is now asked 
-to plan the next sprint without knowing anything of the application, and to commit to fixing it for the end
-of the sprint.
+Seen many times: the application has been developed by someone else, and has
+been dropped like a steaming pile of garbage on the team's table. The team, who
+knows nothing about the internals of the application, is now asked to plan the
+next sprint without knowing anything of the application, and to commit to
+fixing it for the end of the sprint.
+
+
+
+
+
+
+
+inability of management to handle a mixed software-hardware company
+
+attempts to fit traditional job descriptions into different
+  of this chapter. 
+
+Company in eternal panic mode.
+
+Among the various issues I've seen happen in practice,
+
+- people still involved in other tasks
+- short sprints and late planning.
+- sprints always leak
+- fluid teams aimed at the feature.
+- code quality in an agile mindset.
+
+
+
+
+
+
+I am going to analyse Agile practices under two aspects: management, and technical.
+Agile practices has a strong consequences on both.
+
+
+Who is responsible for creating the team?
 
 # Scenario 5: Using the User story template religiously
 
