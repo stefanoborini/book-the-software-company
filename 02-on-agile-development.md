@@ -111,7 +111,33 @@ knows nothing about the internals of the application, is now asked to plan the
 next sprint without knowing anything of the application, and to commit to
 fixing it for the end of the sprint.
 
+### Scenario 5: The Team Lead role
 
+This scenario is the result attempts to fit "traditional" job descriptions 
+into a Scrum framework. Scrum makes no prescription of the Team composition,
+except for a statement generally expressed as "a team of motivated, self-organising
+individuals". Nevertheless, payroll, resumes and job openings need cool-sounding
+titles, and in some cases the Team Lead figure emerges. The Team Lead ends up
+being a catch all for tasks and a blame magnet for failures. It must organise
+the team operations like a Scrum Master, decide priorities and interact with
+the customers like a Product Owner, code like a Team member. Oftentimes this
+figure is the result of an absentee Product Owner who intends his contribute
+to development as "This is what I need done. It's all top priority. It need it
+now. Good bye".
+
+While the Team Lead figure can be a Scrum Master with enhanced competences that
+focuses on the technical side of the Team, a Scrum Master cannot also be a Product
+Owner. The obvious reason is that the Team and the PO are pulling in different
+directions. The PO knows what's needed. The Team knows what's possible.
+Consensus between these two forces is orchestrated by a negotiation, but this
+negotiation is harder to achieve when these two roles reside on the same person.
+The team ends up seeing the Team lead as "the boss", rather than the technical guide
+and organiser, and this influences decision making and willingness to speak openly.
+
+## Scrum not being the right framework for the task
+
+
+### Integration with long round trip time (e.g. manufacturing)
 
 
 
@@ -119,8 +145,6 @@ fixing it for the end of the sprint.
 
 inability of management to handle a mixed software-hardware company
 
-attempts to fit traditional job descriptions into different
-  of this chapter. 
 
 Company in eternal panic mode.
 
@@ -134,12 +158,7 @@ Among the various issues I've seen happen in practice,
 
 
 
-
-
-
-I am going to analyse Agile practices under two aspects: management, and technical.
-Agile practices has a strong consequences on both.
-
+## Scrum not being prescriptive on crucial duties
 
 Who is responsible for creating the team?
 
