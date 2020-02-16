@@ -8,26 +8,26 @@ unproductive parts that do not deliver value and focusing on a fast release
 cycle. The set of principles of Agile focus on lightweight processes, an incremental
 approach to software delivery, and a strong focus on people rather than paperwork.
 In other words, minimum viable burocracy to deliver minimum viable products in
-small, achievable and measurable steps.  On paper, it's an excellent way to get
-things done. Unfortunately, no plan can face direct conflict with reality.
-I've seen plenty of mistakes of companies pretending or claiming to use
+small, achievable and measurable steps. On paper, it's an excellent way to get
+things done. Unfortunately, no plan can face direct conflict with the enemy.
+I've seen plenty of mistakes made by companies pretending or claiming to use
 Agile, while in fact they use anything but Agile, completely neglecting 
 the advantages of Agile by compromising on its assumptions.
 
-Don't get me wrong, I am a strong Agile supporter (and I put my money on it, as
-I have an Advanced Certified Scrum Master certification). What I mean is that
-the whole concept of Agile is often corrupted in its application by managers
-and executives due to the strong disconnection between what Agile methodologies
-are and what these people think they are. The typical scenario is the following: 
-upper management and executives decide to "go agile" because someone sold them
-the idea that it's a better and faster way to achieve results. Lower management
-and teams realise that in order to do agile, they would need not only to rewire
-how the external interactions work, but also their framework against the
-"accepted company practices" in terms of deadlines, meeting schedules,
-manufacturing process, stakeholder availability, and Gantt charting labeling
-from upper management. In addition to that, fundamental tools such as
-information emitters are not available, nor are whiteboards or walls to arrange
-post-its, or closeness of the team members.
+Don't get me wrong, I am a strong Agile supporter and Advanced Certified Scrum Master.
+What I mean is that the whole concept of Agile is often corrupted in its
+application by managers and executives due to the strong disconnection between
+what Agile methodologies are and what these people think they are. 
+
+The typical scenario is the following: upper management and executives decide
+to "go agile" because someone sold them the idea that it's a better and faster
+way to achieve results. Lower management and teams realise that in order to do
+agile, they would need not only to rewire how the external interactions work,
+but also their framework against the "accepted company practices" in terms of
+deadlines, meeting schedules, manufacturing process, stakeholder availability,
+and Gantt charting labeling from upper management. In addition to that,
+fundamental tools such as information emitters are not provided, nor are
+whiteboards or walls to arrange post-its, or closeness of team members.
 The result is that:
 
 1. Executives and upper management claim they are doing Agile while in reality
@@ -39,22 +39,28 @@ The result is that:
 
 ## Scrum
 
-There are many implementation of development methodologies that follow Agile principles
-the most commonly used is probably Scrum. As an implementation, it details specific guidelines
-on how to organise your workday, as well as the general flow of information and execution
-within the development team. 
+There are many implementation of development methodologies that follow Agile
+principles, the most commonly used is probably Scrum. As an implementation, it
+details specific guidelines on how to organise your development process, as
+well as the general flow of information and execution within the development
+team. 
 
 For those unfamiliar with Scrum, the idea is to deliver the product
 incrementally in batches of work called Sprints (lasting from two to four weeks
 each), feature by feature, via the interaction of three entities: 
 
 1. The Product Owner (PO), who is a single person acting as a proxy for the
-   customer. The PO is responsible for the vision of the product and the priority of the features.
+   customer. The PO is responsible for the vision of the product, the priorities of the features,
+   and the general translation of user requirements in a "language" developers can understand.
+   In other words, the PO is the person that developers need to inquire directly and without hindrance 
+   for questions about the features.
 2. The Scrum Team (ST), who estimates the effort required to deliver the
-   product increment satisfying the requests of the PO.
-3. the Scrum Master (SM), who is a single person organising and monitoring the Scrum process,
-   orchestrating the so-called Scrum "ceremonies" (aka meetings),
-   checking progress metrics and promoting the removal of impediments.
+   product increment satisfying the requests of the PO, as well implement them during
+   the Sprint. The team composition is as variegated as it needs to be: a team dedicated
+   to UI development might have both coders and visual designers.
+3. Finally, the Scrum Master (SM) is a single person organising and monitoring
+   the Scrum process, orchestrating the so-called Scrum "ceremonies" (AKA
+   meetings), checking progress metrics and promoting the removal of impediments.
 
 Every project needs to satisfy the holy trinity of parameters: time, features
 and resources.  Mathematics teaches us that you can not enforce constraints on
@@ -67,29 +73,76 @@ on what matters and promote the release of a working product at the end of
 every sprint.  While not perfect, this product focuses on the fundamental
 needs of the customer first.
 
-From what I have seen, Scrum works well in driving delivery, but has its drawbacks.
-Most of these drawbacks arise from three factors, two of which are not strictly Scrum's fault:
+From what I have seen, Scrum works well in driving delivery and focusing
+effort, but has its drawbacks.  Most of these drawbacks arise from these
+factors, the first three of which are not strictly Scrum's fault:
 
-1. Incorrect application of Scrum
+1. Incorrect application of Scrum as a whole.
+2. Incorrect application of aspects of Scrum.
 2. Scrum not being the right framework for the task.
 3. Scrum not being overly prescriptive on some crucial duties.
 
-## Incorrect Use of Scrum
 
-As described in the chapter introduction, Scrum is often distorted because it doesn't 
-really fit with the preconceived method of development. This pressure comes from many different
-directions, and we will examine them as scenarios that I personally witnessed.
 
-### Scenario 1: Use end of sprint as a deadline.
+## Incorrect application of Scrum as a whole
 
-In this scenario, Scrum is understood not as an incremental process, but as the
-end of sprint as the deadline for the a fixed, non-negotiable effort. This
-leads to a situation where the Team has no control over the features to
-deliver, and no control over the time. As you can't cheat nature, 
-either the project will be late, or corners will be cut, generally in
-code quality and testing.
+As a first step we are going to analyse a few patterns of incorrect application
+of Scrum as a whole.  This is normally the result of misunderstanding of the
+fundamentals behind it, or the inability ior unwillingness to transform the
+company's established process into the new strategy, while at the same time
+being pressured into the change from decisions above or from the perceived
+gains that such transition will bring, without being willing to accept the 
+change in mindset andprocess, as well as the associated costs.
 
-### Scenario 2: Absentee Product Owner
+### Scrumwashing
+
+The biggest incorrect use of Scrum I've witnessed is what I call Scrumwashing.
+It is a process that adds a veneer of appearance of doing Scrum, and is
+generally performed unconsciously by those who do not understand how to do
+Scrum. Briefly said, the company and process structure remains exactly the same
+and people's roles are renamed: upper managers become Product Owners, middle managers
+and team leads become Scrum Masters, all while they keep operating in the same way,
+possibly waterfall.
+
+### Scrumfall
+
+Related, but different from Scrumwashing is Scrumfall, that is, Scrum + waterfall.
+Scrumfall does implement Scrum "correctly", but applies the sprint to individual 
+waterfall phases. There are sprints to write the specs, then sprints to write the design,
+then sprints to perform the implementation. 
+
+### Water-Scrum-Fall
+
+Once again related to the previous two, Water-Scrum-Fall starts with a drafting
+of the specs that are signed off, followed by development performed with a
+Scrum methodology, followed by the final acceptance by the customer. I've
+witnessed this method in consulting companies, where the deliverable is decided
+upfront and agreed upon at contract signing. In general, the customer is not
+willing to provide any guidance or feedback during the development. They just
+want the contract fulfilled according to the request, even if the request is
+meaningless.  The team is not consulted to see if the specs are achievable or
+make any sense, and the final product is generally the result of interpreting
+these specs so that, at least on paper, it satisfies the requirements.
+
+## Incorrect application of aspects of Scrum
+
+In other cases, Scrum is applied, but with caveats which undermine its core
+strengths. These are generally the result of inexperienced Scrum Masters and
+Product Owners, or when Scrum is applied in a context where software production
+must interact with other aspects of the business having different leading time
+or feedback and prodcution cycles, typically manufacturing and research.
+
+### Use end of sprint as a deadline
+
+In this scenario, Scrum is understood not as an incremental process, but as a
+fixed time/fixed goal project, typically of one Sprint. The end of Sprint is
+considered the deadline for the fixed, non-negotiable effort. This leads to a
+situation where the Team has no control over the features to deliver, and no
+control over the time. As you can't cheat nature, something has to give: either
+the project will be late, or corners will be cut, generally in code quality and
+testing.
+
+### Absentee Product Owner
 
 There are issues to be solved, but nobody knows where they are. The product
 owner is not aware of being the product owner, and is unavailable for
