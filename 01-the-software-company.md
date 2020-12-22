@@ -1,7 +1,7 @@
 ---
 nav_order: 1
 ---
-# 1. The Software Company
+# 1 The Software Company
 
 As we established in the introduction, if your company creates software of any
 kind (from basic scripts to complex applications) it is a software company.  It
@@ -33,7 +33,7 @@ can be represented as follows:
 
 We will investigate each of these points in more details.
 
-## 1.1. Creation and maintenance of the runtime
+## 1.1 Creation and maintenance of the runtime
 
 When you want to develop some software, you have to rely on external components
 of various nature, such as interpreters, compilers, libraries, supported
@@ -60,7 +60,7 @@ You therefore need a proper process in place to reliably manage, build, maintain
 deliver, update, and track your runtime components effectively, and ensure that
 the runtime is properly deployed and usable by all interested parties.
 
-## 1.2. Creating and maintaining the software development infrastructure
+## 1.2 Creating and maintaining the software development infrastructure
 
 Creating software goes well beyond writing code. Code, in fact, can be said
 to be almost the trivial part. The surrounding infrastructure needed to create
@@ -81,7 +81,7 @@ considerable attention and skills. While some improvisation and liberties can be
 taken at a very small scale, even a single developer will eventually need all
 of the above.
 
-# 1.3. Creation the software product
+## 1.3 Creation the software product
 
 Before coding can take place, some effort must be invested in understanding how
 the application should behave, what kind of operations and workflows should
@@ -105,7 +105,7 @@ documentation, debugging, performance tools, interactive linting and error
 checking, refactoring tools, and much more. These tools can reduce the time 
 to accomplish some tasks that would take hours down to mere seconds.
 
-# 1.4 Documentation of the software product
+## 1.4 Documentation of the software product
 
 Software is useless to others if not properly documented. A number of software
 packages have gained massive market share also thanks to a comprehensive and
@@ -139,7 +139,7 @@ to generate reference documents. Documentation of design needs UML modeling
 tools. Documentation must also be reachable and searchable, potentially online,
 and it must be directly connected to the version of the code it refers to.
 
-# 1.5 Testing of the software product 
+## 1.5 Testing of the software product 
 
 No software can be produced without bugs. Software will need to be tested at
 different levels, from individual routines and classes, to their integration,
@@ -184,7 +184,7 @@ be executed every night, or as often as possible in a queue.
 All the above requirements are addressed through proper infrastructure, proper
 analysis of the tests cost and benefits, and good programming practices.
 
-# 1.6. Handling of the testing infrastructure
+## 1.6 Handling of the testing infrastructure
 
 Testing will be executed by different actors, some of them humans, other ones computers.
 Typically, the human will run quick unit tests on its machine to remove trivial mistakes and check
@@ -205,7 +205,7 @@ account parameters such as:
 - attached rigs: machines that provide access to hardware rigs should only run tests that are actually dependent on these rigs.
 - cost: depending on the testing infrastructure, an excessive availability of executors can increase costs due to licensing terms.
 
-# 1.7 Handing network, databases, file storage, cloud infrastructure
+## 1.7 Handing network, databases, file storage, cloud infrastructure
 
 Every company needs a network, and networks are fragile, require configuration,
 protection from attack both from the inside and outside, and automation of common tasks.
@@ -258,7 +258,7 @@ Finally, an appropriate strategy must be in place for schema migration in case
 of changes in the stored data, as well as appropriate downtime scheduling to minimise
 disruption of operations.
 
-# 1.8. Handling the versioning and release of the software
+## 1.8 Handling the versioning and release of the software
 
 Software development moves from release to release, and coordination of the release process
 is fundamental to keep order. THe release process must be reproducible and as automatic as possible.
@@ -280,7 +280,7 @@ for both technical and business tasks:
 3. The final releaseable entity must be deployed somewhere accessible to the interested parties.
 4. Interested parties must be notified about the new version, where it can be found, and how it can be installed.
 
-# 1.9. Deploy the software
+## 1.9 Deploy the software
 
 After release, the software must be deployed, either manually or automatically.
 In general, the software is first uploaded on some form of storage endpoint,
@@ -318,7 +318,7 @@ its lifetime. A typical scanario is a machine controlling high end hardware
 (such as a robot or CNC machine), or machines used to assist the operations of
 departments of the company itself.
 
-# 1.10. Handle interaction of the software product with the core business process
+## 1.10 Handle interaction of the software product with the core business process
 
 Additional software may be required in support of the main business product.
 For example, the company may need to monitor its product after sale via
@@ -343,7 +343,7 @@ comments). The consequence is that code consuming this data must now deal
 with a much more complex data layout, where a simple typo can lead to unpredictable
 results.
 
-# 1.11. Handle interaction between the software development process and the business process.
+## 1.11 Handle interaction between the software development process and the business process.
 
 Another important point is the integration of the software development
 lifecycle with the rest of the business, especially when the business product
@@ -360,7 +360,7 @@ scheduling must be organised to handle the different development cycles and
 process heartbeats of each division within the company.
 
 
-# 1.12. Interaction of the software product with third party entities.
+## 1.12 Interaction of the software product with third party entities.
 
 Third party entities can have deep consequences on the software product and
 process. Typically these third parties are either part of the "input"
@@ -386,7 +386,7 @@ know-how, automation and documentation strictly bound to that vendor, and
 switching will incur major costs or may be downright impossible for technical
 reasons.
 
-# 1.13 Interaction of the software product with regulatory requirements
+## 1.13 Interaction of the software product with regulatory requirements
 
 For some industries, such as those involved in commerce, banking, healthcare,
 aviation and so on, there are strict regulatory requirements to follow before a
@@ -400,7 +400,7 @@ Regulatory documentation will have to be produced and tracked to handle
 these requirements, and generally signed either in wet ink or with a
 digital signature.
 
-# 1.14. Long term support of the software product
+## 1.14 Long term support of the software product
 
 Once the software is released and deployed, a new challenge emerges: not only
 the software needs to be improved, but also old software releases must be
@@ -425,29 +425,31 @@ steps to reproduce the error condition. Most of the time of the support team
 will be spent investigating these obscure reports, to discover that are not
 bugs of the software product itself. 
 
-Particular care must be taken, during implementation, not to enter into inescapable
-situations with files already on the end user's computers[^1]. 
-Refactoring techniques for databases can be used to perform schema migrations,
-but proper care and support of advanced features (such as triggers and stored
-procedures) may be needed, requiring a different database engine than the one
-currently in use.
+Particular care must be taken, during implementation, not to create inescapable
+situations with files already on the end user's computers: a real case scenario
+I've witnessed involved a file we created on the end user computers.
+In these files, version 1.0 of the software wrote a date as day-month-year.
+Version 2.0 of the software wrote month-day-year. With a few
+exceptions of impossible cases, there is no practical way to differentiate
+which date format was used, and the root cause was that the file itself 
+had no version information. As a hack, the new release piggybacked on the
+presence of another unrelated information, added in version 2.0 of the software,
+to assess the "informal" file format version.  When software version 3 was
+released, a version tag was finally added to the file.  
+
+Exactly like file formats, databases also occasionally need migrations to be
+carried out. efactoring techniques for databases do exist but proper care and
+support of advanced features (such as triggers and stored procedures) may be
+needed, requiring a different database engine than the one currently used.
 
 In other words, at every new release of the software, its surrounding
-environment acquires inertia, and changes must be considered not only within
-the framework of the software at that specific moment in time, but also its
-state in the past and its possible future. This add a potentially large burden
-that needs to be taken into account.
+environment acquires inertia due to its established legacy, and changes must be
+considered not only within the framework of the software at that specific
+moment in time, but also its state in the past and its possible future. This
+add a potentially large burden that needs to be taken into account.
 
-[^1]: A real case scenario I've witnessed involved a file, written on customers
-computers, that had no version information. In these files, version 1 of the
-software wrote a date as day-month-year. Version 2 of the software wrote
-month-day-year. With a few exceptions of impossible cases, there is no
-practical way to differentiate which format it is used. A hack was devised to
-piggyback on the presence of another unrelated information, added in version 2
-of the software, to assess the "informal" file format version.  When software
-version 3 was released, a version tag was added to the file.  
 
-# 1.15. Deprecation of the software product
+## 1.15 Deprecation of the software product
 
 Some software is eventually deprecated, not only as old version, but as a whole.
 Deprecation is generally performed when the software was supporting a process
@@ -461,7 +463,7 @@ a dependency against it. The applications must be modified to remove the depende
 against the deprecated component, or the component simply can't be deprecated in full, 
 but will remain active as an obsoleted component.
 
-# Conclusions 
+## Conclusions 
 
 This chapter wanted to bring attention to the following core points: 
 
