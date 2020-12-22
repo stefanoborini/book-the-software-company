@@ -15,13 +15,14 @@ special attention as it behaves according to new rules. I therefore define the f
 **Software company**: a company or institution developing software, regardless if
 software is their end product or not. 
 
-Under this definition, the following are software companies:
+Under this definition, the following are very likely to be software companies, even if some 
+do not appear to be at first glance:
 
 - A company making an instant messenger application
 - A consultant group for statistical analysis and data mining
 - A manufacturing company producing chemicals
-- A manufacturing company producing mechanical assemblies
-- A research center in high energy physics
+- A manufacturing company producing mechaelectronic assemblies
+- A research center in high energy physics.
 
 As you can see, while the first one naturally matches the traditional definition
 of a software company, the others generally are not considered as such. This is
@@ -38,13 +39,15 @@ statements are, in fact, generally correct:
   commissioning (either internal or from suppliers), data analysis for post-sales support,#
   document traceability for regulatory certifications.
 - The research center needs research reproducibility, support for data acquisition from
-  internally developed instruments, data plotting, implementation of novel models.#
+  internally developed instruments, data plotting, implementation of novel models.
 
 All of these cases require software, despite software not being the product
-that the company sells. In some cases, the software can be just bought, but
-this is often not the case. Some of this software may be basic scripts, other
-may be more complex, tailored applications with business-specific
-personalisation and requirements.
+that the company sells to customers. However, any software exists due to demand,
+and in this case the customer is simply the company itself.
+
+In some cases, the software can be just bought, but this is not always the
+case. Some of this software may be basic scripts, other may be more complex
+applications with business-specific personalisation and requirements. 
 
 I hope that there's a compelling case for the definition of "software company"
 to be therefore true. If your company writes code in any form, it is a software
@@ -52,7 +55,7 @@ company. The implications are profound.
 
 ## Woes of a young industry?
 
-Software adds new dimension to the first and second pillars of engineering:
+Software adds a new dimension to two well established pillars of engineering:
 mechanical and electronical. However, it is uncanny how bad and mistreated
 software is, compared to its older counterparts.
 
