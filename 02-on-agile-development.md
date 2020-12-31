@@ -4,25 +4,28 @@ nav_order: 2
 # 2 On Agile Development
 
 Agile is a set of guidelines on how to deliver quality software, skipping
-unproductive parts that do not deliver value and focusing on a fast release
-cycle. The set of principles of Agile focus on lightweight processes, an incremental
-approach to software delivery, and a strong focus on people rather than paperwork.
-In other words, minimum viable burocracy to deliver minimum viable products in
-small, achievable and measurable steps. On paper, it's an excellent way to get
-things done. Unfortunately, no plan can face direct conflict with the enemy.
-I've seen plenty of mistakes made by companies pretending or claiming to use
-Agile, while in fact they use anything but Agile, completely neglecting 
-the advantages of Agile by compromising on its assumptions.
+unproductive or inefficient parts that do not deliver value and focusing on a
+fast release cycle. The set of principles of Agile focus on lightweight
+processes, an incremental approach to software delivery, and a strong focus on
+people and direct communication rather than paperwork.  In other words, minimum
+viable burocracy to deliver minimum viable products in small, achievable and
+measurable steps, new feature after new feature. 
 
-Don't get me wrong, I am a strong Agile supporter and Advanced Certified Scrum Master.
-What I mean is that the whole concept of Agile is often corrupted in its
-application by managers and executives due to the strong disconnection between
-what Agile methodologies are and what these people think they are. 
+On paper, Agile is an excellent way to get things done.  Unfortunately, no plan
+can face direct conflict with the enemy.  I've seen plenty of mistakes made by
+companies pretending or claiming to use Agile, while in fact they use anything
+but Agile, completely neglecting the advantages of Agile by compromising on its
+assumptions.
+
+Don't get me wrong, I am a strong Agile supporter. What I mean is that the
+whole concept of Agile is often corrupted in its application by managers and
+executives due to the strong disconnection between what Agile methodologies
+*are* and what these people *think they are*. 
 
 The typical scenario is the following: upper management and executives decide
-to "go agile" because someone sold them the idea that it's a better and faster
-way to achieve results. Lower management and teams realise that in order to do
-agile, they would need not only to rewire how the external interactions work,
+to "go agile" because it is sold as a more effective and faster way to deliver
+results. Lower management and teams realise that in order to implement an
+agile framework, they would need not only to rewire how the external interactions work,
 but also their framework against the "accepted company practices" in terms of
 deadlines, meeting schedules, manufacturing process, stakeholder availability,
 and Gantt charting labeling from upper management. In addition to that,
@@ -31,11 +34,26 @@ whiteboards or walls to arrange post-its, or closeness of team members.
 The result is that:
 
 1. Executives and upper management claim they are doing Agile while in reality
-   the company is not. This percolates to job announcements from HR.
-2. Middle and low management (if uninformed or inexperienced) are led to believe Agile doesn't work or cannot work
+   the company is not. This percolates to job announcements from HR. New hires think
+   they are joining an Agile system while they are not.
+2. Middle and low management (if uninformed or inexperienced) are led to believe Agile doesn't work or cannot work,
    or (if informed) that what the company is doing is not Agile, but a hodgepodge of tragedy.
 3. Team is caught in the mess that originates from this, and starts to either
    dismiss Agile practices or resign altogether.
+
+The result is that Agile has become a buzzword that is both hated,
+misunderstood, and pointed as a cargo cult, not because of what Agile actually
+is, but because of all the people who botched it so badly.
+
+So let's focus first on what Agile is: a set of principles for development.
+Agile means to plan for requirements to change, because they will, so stay 
+lightweight and flexible to minimise the cost associated to these changes,
+and strongly encourage those who dictate the requirements to stay in the loop.
+That's it. Nothing more. Do you want to distill it down even further? Here is is:
+*Talk to your customers, talk to your teammates, get things done*. 
+Everything else (Scrum, Kanban, etc) is prescriptive methodology that dictates
+how to apply Agile principles in the real world.  Here is when things tend to
+go wrong.
 
 ## Scrum
 
@@ -49,8 +67,8 @@ For those unfamiliar with Scrum, the idea is to deliver the product
 incrementally in batches of work called Sprints (lasting from two to four weeks
 each), feature by feature, via the interaction of three entities: 
 
-1. The Product Owner (PO), who is a single person acting as a proxy for the
-   customer. The PO is responsible for the vision of the product, the priorities of the features,
+1. The Product Owner (PO), a single person acting as a proxy for the
+   customer. The PO is responsible for the direction of the product, the priorities of the features,
    and the general translation of user requirements in a "language" developers can understand.
    In other words, the PO is the person that developers need to inquire directly and without hindrance 
    for questions about the features.
@@ -67,11 +85,12 @@ and resources.  Mathematics teaches us that you can not enforce constraints on
 all three. If you have fixed resources (team, technical skills, development
 tools) and fixed time (deadline), the the features will need to be left
 floating. If on the other hand the project has fixed resources and fixed
-features, the flexibility is in the delivery time. You can't cheat this
+features, the flexibility must be in the delivery time. You can't cheat this
 fundamental law of nature. Scrum defines a process that allows the PO to focus
-on what matters and promote the release of a working product at the end of
-every sprint.  While not perfect, this product focuses on the fundamental
-needs of the customer first.
+on what matters and promotes the release of a working product at the end of
+every sprint.  While not perfect, this product targets the fundamental
+needs of the customer first, so that feedback and productivity can be achieved
+as soon as possible.
 
 From what I have seen, Scrum works well in driving delivery and focusing
 effort, but has its drawbacks.  Most of these drawbacks arise from these
@@ -79,10 +98,8 @@ factors, the first three of which are not strictly Scrum's fault:
 
 1. Incorrect application of Scrum as a whole.
 2. Incorrect application of aspects of Scrum.
-2. Scrum not being the right framework for the task.
-3. Scrum not being overly prescriptive on some crucial duties.
-
-
+3. Scrum not being the right framework for the task.
+4. Scrum not being overly prescriptive on some crucial duties.
 
 ## Incorrect application of Scrum as a whole
 
@@ -98,18 +115,18 @@ change in mindset andprocess, as well as the associated costs.
 
 The biggest incorrect use of Scrum I've witnessed is what I call Scrumwashing.
 It is a process that adds a veneer of appearance of doing Scrum, and is
-generally performed unconsciously by those who do not understand how to do
-Scrum. Briefly said, the company and process structure remains exactly the same
-and people's roles are renamed: upper managers become Product Owners, middle managers
-and team leads become Scrum Masters, all while they keep operating in the same way,
-possibly waterfall.
+generally performed unconsciously by those who do not understand how to
+practice it. Briefly said, the company and process structure remains exactly
+the same and people's roles are renamed: upper managers become Product Owners,
+middle managers and Team leads become Scrum Masters, but they keep operating in
+the same way, possibly waterfall.
 
 ### Scrumfall
 
 Related, but different from Scrumwashing is Scrumfall, that is, Scrum + waterfall.
 Scrumfall does implement Scrum "correctly", but applies the sprint to individual 
-waterfall phases. There are sprints to write the specs, then sprints to write the design,
-then sprints to perform the implementation. 
+waterfall phases. There are sprints to write the specs, then sprints to write
+the design, then sprints to perform the implementation. 
 
 ### Water-Scrum-Fall
 
@@ -119,10 +136,11 @@ Scrum methodology, followed by the final acceptance by the customer. I've
 witnessed this method in consulting companies, where the deliverable is decided
 upfront and agreed upon at contract signing. In general, the customer is not
 willing to provide any guidance or feedback during the development. They just
-want the contract fulfilled according to the request, even if the request is
-meaningless.  The team is not consulted to see if the specs are achievable or
-make any sense, and the final product is generally the result of interpreting
-these specs so that, at least on paper, it satisfies the requirements.
+want the contract fulfilled according to the request, even if the request makes
+no sense.  The Team is not consulted before the final sign-off to see if the
+specs are achievable or make any sense, and the final product is generally the
+result of interpreting these specs so that, at least on paper, it satisfies the
+requirements.
 
 ## Incorrect application of aspects of Scrum
 
@@ -130,7 +148,7 @@ In other cases, Scrum is applied, but with caveats which undermine its core
 strengths. These are generally the result of inexperienced Scrum Masters and
 Product Owners, or when Scrum is applied in a context where software production
 must interact with other aspects of the business having different leading time
-or feedback and prodcution cycles, typically manufacturing and research.
+or feedback and production cycles, typically manufacturing and research.
 
 ### Use end of sprint as a deadline
 
@@ -144,35 +162,106 @@ testing.
 
 ### Absentee Product Owner
 
-There are issues to be solved, but nobody knows where they are. The product
-owner is not aware of being the product owner, and is unavailable for
-questions, being too busy. The team has to understand what needs to be done
-from the open story, but the request is unclear.
+This is a very common situation. The Product Owner is nowhere to be seen. It
+can happen that either the PO is unaware of being so, or is just too busy.
+Unfortunately the job of the Product Owner does not complete with the
+occasional end of sprint/beginning of sprint period.  The Team needs to
+understand what needs to be done from the User Story. If the request is
+unclear, or some aspects require discussion during implementation, the Product
+Owner must be available. Failure to do so will end up delaying the Story, or
+implementing the Story incorrectly.
 
-### Scenario 3: Absentee team
+### Absentee Team
 
-The reverse of the above is when the team is unavailable to receive input from the product owner, normally
-because they are involved in other tasks, or the product owner keeps requesting a meeting between him
-and the team lead to "keep it short". The team lead now has to propagate the information from the product
-owner.
+In general, the Product Owner should not disrupt the Team during the Sprint unless
+directly summoned. The Product Owner is pulled by the Team, never pushed on the Team.
+However, a situation can occur when the Team requires the Product Owner, but when the
+Product Owner is available, the Team is not. This is due to a disruption of the
+Team by other forces, which is a poor practice in itself. The consequence of
+this is that Team and Product Owner never have the chance to interact directly, and
+if this can be brought to the extreme when someone from the Team, or even the Scrum Master,
+becomes a proxy for the Product Owner. 
 
-### Scenario 4: Team has no idea of the application
+A similar situation can occur not because the Team is actually absent, but because
+the Product Owner does not have time, and asks for a restricted one-to-one
+meeting with the proxy to "keep things short". The proxy now has to propagate
+the information from the Product Owner to the Team, and has become basically a
+secondary Product Owner, except has no idea apart from the extremely narrow set of
+information provided by the real Product Owner.
 
-Seen many times: the application has been developed by someone else, and has
-been dropped like a steaming pile of garbage on the team's table. The team, who
+## Team too large
+
+Another mistake I've seen in some cases is to have a Scrum Team that is too large.
+I've seen "Scrum Teams" of 20 people, way, way above the optimal of around 6 people.
+More people means poor integration and a higher chance of unproductive communication.
+Daily standups become longer, and what one part of the Team does is likely not
+relevant to the other part. These large teams reflect poor planning in dividing tasks,
+scope, and competences of the team.
+
+## Poor subdivision of competences
+
+This antipattern presents itself in two ways: poor allocation of people, and
+poor assignment of tasks.  
+
+For the first case, poor allocation of people, a Team should have all the
+competences required to achieve the goal of the Sprint. If a team is given a
+task, but knows nothing about the technical details on how to achieve that
+task, they simply can't progress.  The likely scenario will be that they have
+to interact with an expert outside the team, which may or may not be available.
+A proper way to conduct the team would be to include the external expert in the
+Team. Typical examples of this situation is when a Team of developers needs to
+develop an application frontend, but has no support from a UI designer or the
+backend expert. These two should be part of the team, either fully or
+partially.
+
+The second case is corollary to the first, but is related to how individual tasks
+are assigned during a Sprint. Some Scrum teams operate so that anybody can grab
+any available tasks and get to work. Reality is however different. 
+Some parts of the code may be better known by one or two elements of the team, either
+because they already worked on it, or because they have a technical background or
+seniority that allows them to understand it better. The most effective way to deliver
+a result is for these people to take those tasks. If another member were to
+pick it, coding will require more time, reviews will require more back and
+forth, and overall the effectiveness of the team will be less than what it
+would have been if the task was taken by the right person. Nevertheless, one
+also has to consider load balancing and information sharing. Proper assignment
+of tasks is a collective decision of the team that cannot be performed at
+random or "when you are free take the next task".
+
+### Team has no clue about the application
+
+Another frequently seen antipattern is when the application has been developed
+by someone else (likely contractors, or another team), and has been dropped
+like a steaming pile of garbage on the Team's table. The Team, who
 knows nothing about the internals of the application, is now asked to plan the
 next sprint without knowing anything of the application, and to commit to
-fixing it for the end of the sprint.
+fixing it for the end of the sprint. The results will be disastrous. Teams and
+team members are not interchangeable at will, and knowledge of the internals
+and the required consistency in a piece of software is important information
+that is never transported from one team to another easily. Some companies
+try to mitigate this issue with massive amounts of documentation, but while
+documentation is a fundamental tool, excessive use of it adds more burden to
+the process, and moves the problem from understanding the code to understanding
+the documentation against the code. 
 
-### Scenario 5: The Team Lead role
+At the end of the day, brain to brain data transfer is a fundamentally slow
+process, Agile acknowledges this, and highlights the fact that face to face,
+direct communication is the mechanism with the highest bandwidth and lowest
+latency. 
 
-This scenario is the result attempts to fit "traditional" job descriptions 
-into a Scrum framework. Scrum makes no prescription of the Team composition,
+
+
+
+
+### The imaginary "Team Lead" role
+
+This scenario is the result of Scrumwashing traditional job descriptions 
+into a Scrum framework. Scrum makes no prescription about the Team composition,
 except for a statement generally expressed as "a team of motivated, self-organising
 individuals". Nevertheless, payroll, resumes and job openings need cool-sounding
 titles, and in some cases the Team Lead figure emerges. The Team Lead ends up
-being a catch all for tasks and a blame magnet for failures. It must organise
-the team operations like a Scrum Master, decide priorities and interact with
+being a catch all for tasks and a blame magnet for failures, must organise
+the Team operations like a Scrum Master, decide priorities and interact with
 the customers like a Product Owner, code like a Team member. Oftentimes this
 figure is the result of an absentee Product Owner who intends his contribute
 to development as "This is what I need done. It's all top priority. It need it
@@ -184,11 +273,13 @@ Owner. The obvious reason is that the Team and the PO are pulling in different
 directions. The PO knows what's needed. The Team knows what's possible.
 Consensus between these two forces is orchestrated by a negotiation, but this
 negotiation is harder to achieve when these two roles reside on the same person.
-The team ends up seeing the Team lead as "the boss", rather than the technical guide
+The Team ends up seeing the Team lead as "the boss", rather than the technical guide
 and organiser, and this influences decision making and willingness to speak openly.
 
 ## Scrum not being the right framework for the task
 
+In some contexts, Scrum is simply not the right framework. I've witnessed this 
+in highly regulated industries such as 
 
 ### Integration with long round trip time (e.g. manufacturing)
 
