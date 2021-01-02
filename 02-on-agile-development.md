@@ -101,6 +101,7 @@ factors, the first three of which are not strictly Scrum's fault:
 3. Scrum not being the right framework for the task.
 4. Scrum not being overly prescriptive on some crucial duties.
 
+
 ## Incorrect application of Scrum as a whole
 
 As a first step we are going to analyse a few patterns of incorrect application
@@ -141,6 +142,8 @@ no sense.  The Team is not consulted before the final sign-off to see if the
 specs are achievable or make any sense, and the final product is generally the
 result of interpreting these specs so that, at least on paper, it satisfies the
 requirements.
+
+
 
 ## Incorrect application of aspects of Scrum
 
@@ -189,7 +192,7 @@ the information from the Product Owner to the Team, and has become basically a
 secondary Product Owner, except has no idea apart from the extremely narrow set of
 information provided by the real Product Owner.
 
-## Team too large
+### Team too large
 
 Another mistake I've seen in some cases is to have a Scrum Team that is too large.
 I've seen "Scrum Teams" of 20 people, way, way above the optimal of around 6 people.
@@ -198,7 +201,7 @@ Daily standups become longer, and what one part of the Team does is likely not
 relevant to the other part. These large teams reflect poor planning in dividing tasks,
 scope, and competences of the team.
 
-## Poor subdivision of competences
+### Poor subdivision of competences
 
 This antipattern presents itself in two ways: poor allocation of people, and
 poor assignment of tasks.  
@@ -249,10 +252,6 @@ process, Agile acknowledges this, and highlights the fact that face to face,
 direct communication is the mechanism with the highest bandwidth and lowest
 latency. 
 
-
-
-
-
 ### The imaginary "Team Lead" role
 
 This scenario is the result of Scrumwashing traditional job descriptions 
@@ -276,10 +275,96 @@ negotiation is harder to achieve when these two roles reside on the same person.
 The Team ends up seeing the Team lead as "the boss", rather than the technical guide
 and organiser, and this influences decision making and willingness to speak openly.
 
+### Using the User Story template religiously
+
+This is a minor issue, but I've seen it occur in some companies, especially in environments
+that are inexperienced in Scrum. 
+
+A common Scrum User Story template is the "As a ... I want ... so that ...". The intent 
+is to capture the software feature and its target. A simple application of the above template
+to a music player could say, For example
+
+```
+*As a* User, *I want* to search songs *So that* I can find the song that interests me.
+```
+
+I have seen this format followed religiously and verbatim. Nothing less, nothing more.
+This results in poor readability and stifled communication. The point of the rule is to
+ensure that the critical information given above is present for a story to be valid.
+The same story, rewritten:
+
+```
+Users need to be able to search songs, for example by typing the name of the song
+in an input area, and obtain a list of the matching ones as they type.
+```
+
+While this seems trivial, it is not only a petty lexical and formatting
+requirement. The User Story must be human readable, and must address the "As a
+I want So that" need, but also leave space for ease of readability, as well as
+broader explanatory power.  Artificially constraining your story to a rigid
+template of sterile points is not the goal. The goal is to communicate intent
+clearly and start a conversation between the User and the Team.
+
+
 ## Scrum not being the right framework for the task
 
-In some contexts, Scrum is simply not the right framework. I've witnessed this 
-in highly regulated industries such as 
+In some contexts, Scrum is simply not the right framework, or need to consider the
+larger context in which it is performed. We'll explore a few of the circumstances that
+might undermine a Scrum approach.
+
+### IT support
+
+IT engineers normally have to deal with two types of work: on demand
+"first-come first-serve" issue resolution, and administration of
+infrastructure. Scrum is clearly not indicated for the first type of work.
+Imagine your IT person accepting your request and telling your problem will be
+first prioritized. Then, if deemed of sufficient priority it will be addressed
+and finalised in two weeks time. For this kind of activity, Kanban is a better
+strategy exactly because it focuses on a first-come first-serve handling.
+
+Different is however the topic of administration of infrastructure. Depending
+on the infrastructure, and the strategies implemented by IT, a Scrum approach
+might be appropriate, for example to develop administrative tools and scripts.
+The result is that, in some cases, IT might have to work with both a Kanban and
+a Scrum style in parallel, which might introduce its own challenges for
+personnel allocation.
+
+### Highly regulated industries or consulting
+
+Another environment in which Scrum might not be appropriate (with caveats) is
+highly regulated industries such as those involved in medical devices,
+aviation, finance, and pharmaceuticals. These industries have a strong burden
+of paperwork to address regulatory requirements. A typical scenario is the
+addition of a new feature to software that can, in case of failure, potentially
+injure or kill. This modification cannot just be included in the next sprint
+and performed. Instead, appropriate assessments of the impact of the change
+must be performed and signed off, the change must be approved and tracked, the
+code modified, test protocols updated, test reports written and signed off, and
+a new release must be done, together with the associated documentation. 
+
+Scrum can, in a sense, be used within the above scenario if the development is
+ongoing and the change can be inserted into the production chain, but the
+documentation burden represents a deliverable in itself, and generally it is a
+deliverable that requires long time and the involvement of multiple people that
+may not be part of the team.
+
+Consulting also offers a challenging environment for a Scrum setup. Individual
+consultants are generally hired by a company to focus on a particular task. If
+the consultant is not involved in a Scrum team, Scrum makes no sense for a single person,
+although some concepts of it can be applied to streamline the problem and solve
+it bit by bit, as well as doing demos along the way. 
+
+In the case of consulting companies, generally there's no negotiation from the
+team. The team is handed a consulting contract where the requirements have been
+specified by the customer or agreed as part of a larger project. The Team can,
+however, internally use Scrum to organise the process, but it is unlikely that
+the customer will be available for further inquire, making the job of the
+Product Owner and the Team much harder. This is normally due to the fact that
+either the customer believes their side of the involvement has been satisfied
+and just want the result, or because the customer's internal responsibilities
+for the project are poorly defined and nobody is really responsible for taking
+decisions. These projects normally fail to deliver a quality product.
+
 
 ### Integration with long round trip time (e.g. manufacturing)
 
@@ -304,70 +389,13 @@ Among the various issues I've seen happen in practice,
 
 ## Scrum not being prescriptive on crucial duties
 
+
 Who is responsible for creating the team?
+Who does end user support, or bug verification?
 
-# Scenario 5: Using the User story template religiously
+Refactoring and technical stories.
 
-User stories should tailor to the template "As a ... I want ... so that ...". Some people use this format
-religiously, so much that they actually write 
-
-```
-*As a*
-
-User
-
-*I want*
-
-to search songs in alphabetical order
-
-*So that*
-
-The appropriate songs are displayed
-```
-
-I have two problems with this. First, that it's really hard to read for a ordinary human being.
-Second, that it misses the point entirely. In journalism, there's a similar rule, the 5 W of journalism:
-Who, What, When, Where, Why. These are established and sensible rules, but open up your daily newspaper
-and you will not find articles in the form
-
-```
-Who:
-
-Ms. Williamson
-
-What:
-
-Had a car accident
-
-When:
-
-yesterday
-
-Where:
-
-at the crossing in front of the church
-
-Why:
-
-another car ran a red light
-```
-
-What one wants to read is a story in this form:
-
-```
-Users need to search songs in alphabetical order, and obtain a list of the
-matching songs as they type the name they are searching.
-```
-
-While this seems trivial, it is not only a petty lexical and formatting
-requirement. The user story must be human, and must address the "As a I want So
-that" need, but leave space for ease of readability and broader explanatory
-power. Artificially constraining your story to a rigid template of sterile
-questions is not the goal. The goal is to communicate intent clearly.
-Religiously following the template does not achieve that. Enforcing the
-following of this template religiously in structure rather than intent is
-detrimental, and shows a compliance to the rules typical of people who are
-inexperienced.
+documentation duties.
 
 
 ## The untold dark consequences of Scrum
