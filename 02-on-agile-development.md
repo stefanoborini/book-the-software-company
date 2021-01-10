@@ -144,7 +144,6 @@ result of interpreting these specs so that, at least on paper, it satisfies the
 requirements.
 
 
-
 ## Incorrect application of aspects of Scrum
 
 In other cases, Scrum is applied, but with caveats which undermine its core
@@ -368,93 +367,153 @@ decisions. These projects normally fail to deliver a quality product.
 
 ### Integration with long round trip time (e.g. manufacturing)
 
+Scrum can be challenging to implement when the company product has both
+software and hardware components. With hardware, especially during development,
+the round trip from prototype to final product can take weeks or even months,
+leaving the software development team without real hardware components to test
+against. Generally, this is taken care by either developing against previous,
+older hardware or against a software simulator.  Unfortunately, there is no
+guarantee that the real hardware behavior is exactly the same, leaving
+developers to scramble at the last minute with non-collaborative hardware they
+did not expect. This results in multiple sprints that focus exclusively on
+bugfixing or creating workarounds, and with little chance for refactoring: with
+the hardware basically production-ready, software must be completed
+quickly to get the product released.
 
-
-
-
-inability of management to handle a mixed software-hardware company
-
-
-Company in eternal panic mode.
-
-Among the various issues I've seen happen in practice,
-
-- people still involved in other tasks
-- short sprints and late planning.
-- sprints always leak
-- fluid teams aimed at the feature.
-- code quality in an agile mindset.
-
+In these scenarios, it's important that the management is able to handle a
+mixed software-hardware company, adapting priorities and organising the
+production pipeline so that the appropriate workflow is maintained considering
+the lead times, the amount of available hardware allocated for testing, proper
+definition of interfaces between software and hardware, and proper knowledge
+transfer between hardware and software teams.
 
 
 ## Scrum not being prescriptive on crucial duties
 
+Scrum as a methodology only focuses on some aspects of the organisation. Unfortunately, some parts
+are left unspecified, resulting in suboptimal solutions and a patchwork of bad practices even with
+correctly implemented Scrum. I will present a list of some of the most commonly missing duties and
+tasks that Scrum unfortunately does not specify, but must be assigned for organic and fluid
+development pipeline.
 
-Who is responsible for creating the team?
-Who does end user support, or bug verification?
+### Who is responsible for creating the team?
 
-Refactoring and technical stories.
+Scrum does not dictate who should be in charge of defining the Team composition. 
+Teams are not cast in stone. They are built around the needs and expertise required to
+deliver the required features.  Different goals may require different expertise
+within the Team, or have different Teams closely interact during development of
+a set of features. 
 
-documentation duties.
+A given level of management with technical competence should be in charge of
+deciding people allocation depending on the higher level priorities and roadmap.
+Without this coordination, Teams will be ineffective because they will lack the
+required competences, and are unable to involve the appropriate expertise from
+other Teams due to lack of available time. 
 
+### Who does end user support, or bug verification?
+
+The lifetime of a bug generally starts at the user-facing part of application.
+This bug is filed by the end user and needs to be assessed for reproducibility
+and correctness. Users are generally not very good at detailing the bugs they
+find, and in some cases these bugs are actually user errors.  Someone needs to
+be able to evaluate, filter, verify, complement and improve the bug description
+so that the appropriate development team can understand the issue.
+
+Once this evaluation is done, the bug needs to find its way to the root cause
+of the problem. It may be the user interface, or it may be a deep backend
+library returning an incorrect result. Appropriate expertise of the various
+parts of the application need be present in order to track down the behavior
+and be able to funnel the bug to the appropriate subsystem.
+
+When the bug finally reaches the correct subsystem, someone needs to be
+able to fix it, something that need knowledge and competence of that part of
+the code. If the bug is due to the interaction between two subsystems, expertise
+about both subsystems must be present. 
+
+Scrum is not prescriptive on this fundamental task, resulting in poor handling
+and allocation of teams, that end up treating bug fixing as a side activity with 
+poor allocation of resources. The reason is that, while features are
+predictable in required effort and can be scheduled within the sprint, bugs are
+unpredictable in arrival time, priority, required effort, and complexity.
+
+### Who has documentation duties?
+
+One of the principles of Agile is to favor working software over comprehensive
+documentation.  This is however rather naive. Some industries do require
+documentation as part of their regulatory needs. Even in an unregulated
+industry, some information must be documented.  Typical examples may be
+technical whitepapers, coding guidelines, reports for management, hardware rigs
+ip addresses and configuration, onboarding requirements, and much more.
+
+Most companies rely on tools such as Confluence or similar wiki software to
+store this information.  Unfortunately with a large company this wiki tends to
+become a messy catch all of information with poor structure. Information is
+hard to find, not kept up to date, duplicated, or forgotten.  In other words
+documentation suffers of the equivalent of bit rot and need for
+refactoring, exactly like software.
+
+Scrum does not define a role of a Librarian or Archivist. Documentation duties
+are a shared, vague concern, leading to a tragedy of the commons.
+
+### Refactoring and code quality as a consequence, rather than an equal
+
+In all instances of use of Scrum I've seen, the code quality has always been
+abysmal. I am unwilling to assign to Scrum or Agile practices the responibility
+for such failure, but it is worth stressing out a few important points.
+
+Scrum favors the resolution of User Stories, that is, goals that satisfy
+the priorities of the Product Owner, and by proxy, the end user. It does not,
+however, address the need for Stories that keep velocity high. Retrospectives
+may (and often do) consider procedural and technical shortcomings and how to
+address them, but another part of the retrospective discussion is generally
+code quality, lack of documentation, deceiving interfaces, false dependencies,
+lack of expertise. 
+
+The issue is that there are two customers to the codebase: 
+
+- the End User, which produces positive value (money earned) when its needs are satisfied. 
+- the development Team, which produces negative value (money spent) when its needs are not satisfied.
+
+The latter is often known as technical debt. As it creeps higher, technical debt reduces 
+the team effectiveness and increases the cost associated to an End User feature. When the positive
+value delivered by the addition of a feature does not compensate for the cost to incur to deliver it,
+the code is technically bankrupt. 
+
+Scrum, with its emphasis and focus on User stories, targets only the End User,
+not the developers and their velocity. Code quality improvements are supposed
+to be rolled into User Stories stories as "refactoring costs". This never
+really happens. If you can solve a story by either using a 1 Story Point hack, or
+perform a 10 story points refactoring, we all know which option will be
+picked. Additionally, poor solutions may end up being copied around, or other code
+will depend on them, resulting in layer upon layer of poor decisions and
+fragile solutions.  The Team will end up creating problems and solve them with
+more problems, often propagating them to the wider company.
+
+Scrum should define not only User Stories, but also Technical Stories. While
+the first ones target the User, the second ones target the Team. Proper
+assignment of Technical Stories should be performed during the sprints,
+according to the scheduled User Stories and with a non-negotiable allocation
+(say, 20% of the Sprint story points are allocated to Technical Stories). Only
+then management will accept the costs associated to these stories and
+developers won't feel pressured to deliver technically expensive solutions that
+will eventually bring the Team velocity to a standstill.
+
+### Lack of coordination for cross-company software entities 
+
+Very often, top level products end up requiring lower level ones. A typical
+example is a common library shared by different company products. Without
+the proper coordination, different Teams may end up inventing the same
+low-level code in two different (and obviously incompatible) ways.  
+
+When a low level product is identified (typically at the end of the sprint), it
+should be extracted promptly as a dependency before it escalates further, and
+propagated widely across the company. Not performing this task will end up
+creating incompatibilities, poor use of development resources, and knowledge
+burden by having the same operation carried out in multiple, slightly different
+ways.
 
 ## The untold dark consequences of Scrum
 
-In all instances of use of Scrum I've seen, the code quality has always been
-abysmal.  I am unwilling to assign to Scrum or Agile practices the
-responibility for such failure, but it is worth stressing out a few important
-points.
-
-Scrum favors the resolution of user stories, that is, goals that provide
-benefit for the Product Owner, and by proxy, the end user. It does not,
-however, address the need for stories that keep velocity high. Retrospectives
-may (and often do) consider procedural shortcomings and how to address them,
-but another part of the retrospective discussion is generally
-code quality, lack of documentation, deceiving interfaces, false dependencies,
-lack of expertise.
-
-The truth is, there are two customers to the codebase: 
-
-- the end user which produces positive value (money earned) when its needs are satisfied. 
-- the development team, which produces negative value (money spent) when its needs are not satisfied.
-
-Scrum puts all emphasis to the first customer, and completely hides under the rug the second 
-"anti-customer". The idea is that needs for the developers to improve the codebase are supposed to
-be rolled into the first stories as "refactoring costs". This never really happens. If you can solve
-a story with 1 story point with a hack, and refactoring it to proper and more flexible design requires 
-10 story points, we all know which solution will be picked. Code quality goes down another notch,
-until code debt after code debt you will be code bankrupted.
-
-The other issue is that very often top-level products end up requiring meta-products. A typical
-example is a common library shared by different products. However, without coordination and decision
-making, the end result is that the team will deliver the same boilerplate again and again, or worse,
-different teams will invent the same boilerplate in two different (and obviously incompatible) ways.
-Since this meta-product is never coming up in a user story, there will be an intrinsic lack of
-well-integrated meta-products in Scrum driven developments, not because of Scrum itself, but because
-of how people use Scrum.
-
-It is my opinion that the following adjustments should be made to Scrum:
-
-- A backlog should be made of User Stories, created by the Product Owner, and Developer Stories, created
-  by the development team.
-- Every sprint must allocate a defined proportion of User and Developer Stories, depending on how strong 
-  is the need for cleanup. Strong cleanup sprints can have 20% User and 80% developer stories. Feature
-  driven sprints the reverse. Sprint allocation to developer stories should never be under 20%.
-- When a meta-product is identified (typically at the end of the sprint), it should be extracted 
-  promptly as a dependency before it escalates further. The longer is the delay, the more painful will 
-  be the extraction, up to the point that no extraction will be possible.
-
-
-
-every user story starts with 3 points, base
-overall task. nothing specific. no points: only easy/medium/hard
-change tasks as things go on.
-
-sistema a catena di montaggio non funziona. Dovresti portare una feature da prototype a deployment, senza interruzioni.
-
-bad decisions are there to stay. Nobody will refactor them. Some trivial stuff gets copied around again and again.
-the design piles up layer upon layer of bad decisions. we create our own problems, and solve them with other problems.
-tragedy of the commons
 
 
 # On code ownership
@@ -488,3 +547,23 @@ is essential.
 - As above, the fact that these issues are constantly added to the milestones means that it's pretty much impossible to know how far we are from reaching the goal.
 
 - throw software at a problem instead of a person.
+
+
+
+
+Company in eternal panic mode.
+
+Among the various issues I've seen happen in practice,
+
+- people still involved in other tasks
+- short sprints and late planning.
+- sprints always leak
+- fluid teams aimed at the feature.
+- code quality in an agile mindset.
+
+
+
+### 
+
+Refactoring and technical stories.
+
