@@ -512,58 +512,22 @@ creating incompatibilities, poor use of development resources, and knowledge
 burden by having the same operation carried out in multiple, slightly different
 ways.
 
-## The untold dark consequences of Scrum
+## Closing remarks
 
+Scrum and Agile methodologies promote a shift in perspective in how software is
+developed, but this shift does not come for free. Implementing Agile needs to
+be done properly and with care, considering the constraints of the company
+organization and the technical complexity of the project.
 
+Of all methodologies available for software development, Agile methods have a
+better chance of delivering a product. "If not Agile, then what?" is a common 
+statement that has its truth. Alternatives such as Waterfall and Iterative are
+too bulky for the fast paced development world of today. Nevertheless, Agile
+methodologies are becoming more procedural, more complex, more misunderstood,
+and often poorly implemented, often leading to developers who are skeptical
+or hostile to the approach, and with good reasons.
 
-# On code ownership
-
-8. Do you track progress with a physical medium?
-
-Nothing is more frustrating not to know how far you are, what needs to be done, what is still pending.
-I've seen plenty of times when things pile up due to urgency.
-
-We are sensory driven animals. We manipulate objects and having objects represent what needs to be done
-is essential.
-
-- Issues are generally not measurable in achievement. "Cleanup this" is not measurable. We can clean it up for an hour or for three days.
-- certainty of tasks: A person who picks up a task must be clear on what to do
-
-
-- Excessive bickering over technicalities.
-
-- death by a thousands papercuts.
-- unclear dependencies of the various stages of the sprint.
-
-- Excessive use of github issues as a "notebook" introduces a lot of notification noise. A developer has a development track. We should not keep creating issues just for us as reminders. While I understand that the goal is to keep PR small, I fear it decreases understandability instead of increasing it.
-
-- Development model makes it complex to keep the code forward, New branches must depend on still not merged branches, meaning that often we end up with conflicts.
-- hard to know the progress and the remaining work to be done for the specific
-  milestone. GitHub tracker is too primitive.
-- Prioritization and scheduling is pretty much left to random. PM should prioritize and assign issues, remind of the status.
-- bad management of the issue tracker. keep pushing non-milestone tasks from milestone to milestone, instead of leaving them for slack time after the release. The issue list for a milestone should contain what it's expected from the customer for that iteration, that is, the goals (user story), plus the individual tasks on how to achieve that. This way we can know how far we are from customer completion.
-
-- disorganized, complex workflow, limited by the rate of review to get features into the main branch.
-- As above, the fact that these issues are constantly added to the milestones means that it's pretty much impossible to know how far we are from reaching the goal.
-
-- throw software at a problem instead of a person.
-
-
-
-
-Company in eternal panic mode.
-
-Among the various issues I've seen happen in practice,
-
-- people still involved in other tasks
-- short sprints and late planning.
-- sprints always leak
-- fluid teams aimed at the feature.
-- code quality in an agile mindset.
-
-
-
-### 
-
-Refactoring and technical stories.
+The bottom line is that before Agile methodologies are implemented, people within
+the company must be fully on board with their processes and duties. Absent product
+owners, poorly built Teams, and lone-wolf developers will break the methodology.
 
