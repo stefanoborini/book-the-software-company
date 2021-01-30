@@ -4,59 +4,110 @@ nav_order: 3
 
 # 3 On code quality
 
-Code quality may be subjective, but the hard truth is that there's good code, and bad code. Unfortunately, 
-there is no metric for taste, but there are metrics on other factors, such as compliance to
+In this section, we are going to discuss code quality, which will be intended in its
+various aspects:
 
-- standards
-- code styleguides
-- design patterns
-- uniformity of behavior
-- consistency of interface
-- adherence to well known practices and idioms.
+- quality of code layout and formatting
+- quality of API documentation
+- Accuracy of design of routines, classes, modules.
+- Accuracy of design of interface elements, such as APIs, web APIs, file formats.
 
-You should sort out code quality immediately.
+Code quality is probably the source of most attrition and loss of productivity
+in the software company, and for good reasons: it has strong notes of
+subjectivity, potentially sparking inconsistencies to be dealt with, as well as
+feud wars between developers of different factions, but these notes of
+subjectivity often have a foundation on sensible and objective strategies to
+minimise mistakes and maximise extensibility in response to business pressure. 
+They are not for naught, and should never be dismissed. Only managed.
 
-, because refactoring, the practice of cleaning up code, is generally
-unobtainable. I've seen many companies, and not in a single one refactoring was effectively practiced. The 
-general motivation for this 
+In fact while code quality may have subjective connotations, lack of it
+has objective and tangible effects on the costs associated to software
+development, which is why poor code quality is often referred as technical debt. 
+If code quality degrades, the company will eventually reach a state of
+technical bankruptcy. Your developers will spend all of their working time
+fighting with the inconsistencies, bad choices, irrationality, unexpected side
+effects of your code, unable to do any progress toward the shipping of the 
+features that bring money into the business. 
 
-If code quality degrades you will eventually reach a state of technical
-bankruptcy. Your developers will spend all of their working time fighting with
-the inconsistencies, bad choices, irrationality, unexpected side effects of
-your code, unable to do any progress. When this happens, there's no way back.
-Bad code will pile and compound over bad code. Code complexity will arise to
-fight human induced complexity, leading to an unstable, frail codebase where
-nothing can be refactored, because too many hacks and counter-hacks to compensate
-for the hacks will create a super-system of dependencies and unexpected behaviors
-that only a focused, dedicated time investment can disentangle. You will never get
-clearance to proceed on such tasks. Business will say no. 
+When this happens, there's no way back. Bad code will pile and compound over
+bad code. Code complexity will arise to fight human induced complexity, leading
+to an unstable, frail codebase where nothing can be refactored, because too
+many hacks and counter-hacks to compensate for the hacks will create a
+super-system of dependencies and unexpected behaviors that only a focused,
+dedicated time investment can disentangle. You will never get clearance to
+proceed on such tasks. Business will say no, because the net benefit is
+negative: at the end of the journey, you will have the exact same features for
+a massive cost. It's cheaper to just kick the can yet another time. Business
+does not see the internals. It only sees the resulting features. It does however
+see that a feature that may be trivial to implement or required to close a sale
+will require months rather than weeks to be implemented, but you can be
+guaranteed they will not blame the problem on the lack of budgeting that
+allowed this mess to be generated in the first place.
 
-Unfortunately, bad code, poorly designed interface and classes will haunt you
-forever.  Their consequences have far reaching implications that are hard, if
-not impossible to fix, especially if these APIs become the backbone of your
-business. Most of these APIs were initially dismissed as "a prototype" or "just
-internal tool", but the reality of development is that internal APIs never stay
-internal, and the business will pressure developers and managers in releasing
-to the public (either general or to internal teams) entities that never received
-the proper design and polish required for a proper software tool or application.
-Once the gates are open, there's no turning back, because the public now depends on
-these poorly designed APIs, and any change will have to be managed with a deprecation
-strategy. Needless to say, this is additional workload that will never be prioritized.
-The API will remain broken, and the problem will escalate.
+Bad code, poorly designed interface and classes will haunt you forever.  Their
+consequences have far reaching implications that are hard or even impossible to
+fix, especially if these APIs become the backbone of your business. Most of
+these APIs were initially dismissed as "a prototype" or "just internal tool",
+but the reality of development is that an APIs, be it internal or external,
+is a dependency that other components will have.  Occasionally, the business
+will pressure developers and managers into releasing to the public (either
+general or to internal teams) APIs that never received the proper design attention
+and polish.  Once the gates are open, there's no easy turning back, because the
+general customer now depends on these poorly designed APIs, and any change will
+have to be managed with a deprecation strategy. Needless to say, this is
+additional workload that will never be prioritized.  The API will remain
+broken, and the problem will escalate.
 
-# Inferior tools
+Some companies, notably those in regulated industries, have requirements for
+compliance to standards, testing, code styleguides, design patterns, uniformity
+of behavior, consistency of interface, and adherence to well known best
+practices and idioms. Unfortunately, these requirements are often addressed by
+requiring traceability, rather than code investigation, through massive amounts
+of documentation to support changes. While this is commendable and certainly
+required, it leaves developers with little to no time to actually address the
+issue at the code level, either because of lack of time, or because fixing the
+problem for good would require to touch so much code that the amount of
+documentation to justify it would pile higher than the roof, reducing the
+available time even more.
+
+With the above statements, I hope I convinced you it's important to sort out
+code quality immediately, aggressively and correctly, because complex
+refactoring is generally unfeasible. I've seen many companies, and not in a
+single one refactoring was effectively and seriously practiced.
+
+# Use of inferior tools impacting code quality
 
 Code quality can be deeply compromised by inferior tools, either directly or
 indirectly. For example, use of an inferior review tool can make the review
 process slow and clumsy, as well as not give any guarantee that what is merged
-is actually what gets reviewed.
+is actually what gets reviewed. Poor IDEs without automatic code formatting,
+refactoring tools, or type checking can increase the amount of errors and
+inconsistencies. Using inferior, poorly designed third party libraries can
+force the propagation of these bad practices (for example, by developers
+imitating or copying this code), the introduction of workarounds, or writing
+lots of code to address the shortcomings of the library or toolkit in use. 
 
-Using inferior, poorly designed third party libraries can force the propagation
-of these bad practices (for example, by developers imitating or copying this
-code), the introduction of workarounds, or writing lots of code to address the
-shortcomings of the library or toolkit in use. 
+Proper tools must therefore be considered on all aspects, from infrastructure
+to coding to testing. This is not only a business factor (good tools tend to be
+expensive) but also a developer factor (developers tend to have their own tools
+and stick with them). In general, it is recommended to leave the IDE to the
+preference of the developer, because proficiency in the IDE is the most
+important factor in developer productivity. Other tools, such as review tools,
+version control, continuous integration systems, the choice is more open and
+a proper assessment should be done. There's plenty of products, both opensource
+and commercial, that are technically excellent and should be chosen according to
+ease of use, integration with other tools, cost, and last but not least popularity.
+In fact, a popular tool is more likely to be known by new hires, thus reducing
+onboarding costs, and any problem that may arise with the tool is likely to have
+been solved by someone and is just a google search away.
 
-# On code organisation
+
+---------------------
+
+
+
+
+# Code organisation and layout
 
 Code is generally not contained in a single file. There are general practices
 to organise code so that is follows these requirements:
