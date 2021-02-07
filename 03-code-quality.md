@@ -7,8 +7,9 @@ nav_order: 3
 In this section, we are going to discuss code quality, which will be intended in its
 various aspects:
 
-- quality of code layout and formatting
-- quality of API documentation
+- Quality of code layout 
+- Quality of code formatting and ordering
+- Quality of API documentation
 - Accuracy of design of routines, classes, modules.
 - Accuracy of design of interface elements, such as APIs, web APIs, file formats.
 
@@ -75,7 +76,7 @@ code quality immediately, aggressively and correctly, because complex
 refactoring is generally unfeasible. I've seen many companies, and not in a
 single one refactoring was effectively and seriously practiced.
 
-# Use of inferior tools impacting code quality
+## Use of inferior tools impacting code quality
 
 Code quality can be deeply compromised by inferior tools, either directly or
 indirectly. For example, use of an inferior review tool can make the review
@@ -101,36 +102,101 @@ In fact, a popular tool is more likely to be known by new hires, thus reducing
 onboarding costs, and any problem that may arise with the tool is likely to have
 been solved by someone and is just a google search away.
 
+## Quality of code layout
+
+Code is generally not contained in a single file. Instead, it is subdivided in files and folders
+according to some schema. A proper choice of this schema is fundamental for two reasons:
+
+- Improving discoverability: Code layout that groups routines and classes into
+  properly named files and directories makes the discovery of existing
+  functionality easier. In other words, a developer has easier time finding a
+  functionality they need, resulting in faster development and reduced chance of
+  re-creating what is already available..
+- Removing phantom dependencies: Properly organised code tends not to have "phantom 
+  dependencies", that is, dependencies that exist not because of a real,
+  model-driven dependency between entities, but because classes or functions are
+  organised improperly. These phantom dependencies are generally solved by moving
+  these functions and classes "where they belong"
+
+Therefore, proper naming of files and directories, and proper code
+organisation across the files is a factor to consider when aiming for code
+quality.
+
+When it comes to naming modules, some names are a louder signal that poor code
+organisation is present in the codebase. The most prominent is probably
+"utilities" or "utils". A module with such name is guaranteed to become a catch
+all for any functionality, from string parsing to network connectivity. These
+modules tend to grow to unreasonable sizes, creating poorly discoverable
+entities with a large list of imports.  
+
+Another name that raises alarms is "globals", a module where global variables
+(generally for configuration) are stored. This module also tends to attract a
+mixture of unrelated information, as well as becoming a single entity that gets
+imported or included by many, if not all, of the files in your project. Never
+use these names. General purpose routines should be classified at least
+according to the topic they handle, for example networking, security, or string
+manipulation.
+
+A recommended strategy when choosing a layout is not to reinvent it if it
+already exists: many languages or development frameworks use a conventional and
+well established layout, as well as conventional names for the various modules
+and the entities contained therein. For example, React projects typically use a
+split between Components and Containers. Django separates models and views in
+specific subpackages. File names are generally chosen to match the main class
+contained in the file. Using these established conventions promote clear
+communication of intent to other coders via a shared vocabulary of terms, and
+is therefore strongly encouraged.
+
+No matter the final choice, it is important not to lose focus of the two main
+driving forces: discoverability and removal of phantom dependencies. Excesses
+can be bad in both direction, and being overly specific on a layout convention
+can be as detrimental as the lack of it.
+
+## Quality of code formatting and ordering
+
+Entering into the organisation and layout of the code itself within the file,
+there are also important rules to follow. These rules once again focus on 
+human factors.
+
+A file should generally contain one main class plus a handful of support
+classes, routines, and data in support to the main class. This kind of layout
+is generally favored to ensure the file remains small and easy to navigate. A
+large file containing many unrelated classes and functions, in fact, can become
+a problem for the following reasons:
+
+- A particular identifier string can be used in many different classes. Running a text search
+  for this identifier will possibly match outside of the class you are
+  refactoring or debugging, making these tasks harder.
+- The file will contain many potentially unrelated or loosely related functions
+  and classes, each with their own potential dependencies on other modules.
+  When imported by external code, having a large module will trigger these
+  imports, leading to potentially unnecessary dependencies and side effects.
+- A large file is most likely to lead to merge conflicts if two or more developers
+  are working on it.
+- Finally, a large file makes it harder to see how the various entities are organised
+  inside it.
+
+The latter point, in particular, is conventional to communicate importance and intent 
+of the various parts. A typical layout is:
+
+- Standard imports at the top
+- followed by imports of modules that are part of the current code base.
+- Followed by the main public class this module contains and exports (AKA the "linchpin class") 
+- Followed by public functions this module exports
+- Followed by private (internal only) classes and functions.
+
+While this common convention is a mild convention, it helps in keeping the code organised and
+communicate intent, putting main, front facing functionality before internal one.
 
 ---------------------
 
+## Quality of API documentation
+
+## Accuracy of design of routines, classes, modules.
+
+## Accuracy of design of interface elements, such as APIs, web APIs, file formats.
 
 
-
-# Code organisation and layout
-
-Code is generally not contained in a single file. There are general practices
-to organise code so that is follows these requirements:
-
-- discovery: Code layout that groups routines and classes into properly named files and directories makes the discovery of 
-  functionality easier. A developer has an easier time finding the functionality that is relevant for his or her task,
-  resulting in faster development and reduced chance of re-creating existing functionality.
-- isolation: Properly organised code tends not to have "artificial dependencies", that is, dependencies that exist not because
-  of a real, model-derived dependency between entities, but one that exists
-  just because classes or functions are organised improperly. These dependencies are generally solved by moving these functions
-  and classes "where they belong", but this may break imports from external code.
-
-There are names for modules that are a signal and a trap for proper code
-organisation, the most prominent is probably "utilities". A module with such
-name is guaranteed to become a catch all for any functionality, from string
-parsing to network connectivity. These modules tend to grow to unreasonable
-sizes, creating poorly discoverable entities with a large list of imports.
-Another one is "globals", where global variables (generally for configuration)
-are stored. These also tend to attract a mixture of unrelated information, as
-well as becoming a single entity that gets imported or included by many, if not
-all, of the files in your project. Never use these names. General purpose routines
-should be classified at least according to the topic they handle, for example networking,
-security, or string manipulation.
 
 
 - implement things locally, then cleanup and promote globally.
