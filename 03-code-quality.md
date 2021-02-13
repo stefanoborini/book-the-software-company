@@ -4,14 +4,10 @@ nav_order: 3
 
 # 3 On code quality
 
-In this section, we are going to discuss code quality, which will be intended in its
-various aspects:
-
-- Quality of code layout 
-- Quality of code formatting and ordering
-- Quality of API documentation
-- Accuracy of design of routines, classes, modules.
-- Accuracy of design of interface elements, such as APIs, web APIs, file formats.
+In this section, we are going to discuss code quality. We will discuss how to establish, maintain
+and promote it, as well as evaluating its cost against the evolving backdrop of the market and
+the company's goals. The golden rule to establish within the company is to strive for code quality
+as a product in its own right.
 
 Code quality is probably the source of most attrition and loss of productivity
 in the software company, and for good reasons: it has strong notes of
@@ -23,7 +19,7 @@ They are not for naught, and should never be dismissed. Only managed.
 
 In fact while code quality may have subjective connotations, lack of it
 has objective and tangible effects on the costs associated to software
-development, which is why poor code quality is often referred as technical debt. 
+development, which is why poor code quality is often referred as *technical debt*.
 If code quality degrades, the company will eventually reach a state of
 technical bankruptcy. Your developers will spend all of their working time
 fighting with the inconsistencies, bad choices, irrationality, unexpected side
@@ -73,8 +69,8 @@ available time even more.
 
 With the above statements, I hope I convinced you it's important to sort out
 code quality immediately, aggressively and correctly, because complex
-refactoring is generally unfeasible. I've seen many companies, and not in a
-single one refactoring was effectively and seriously practiced.
+refactoring is generally unfeasible. I've seen many companies, and not in 
+a single one refactoring practices were effectively and seriously undertaken.
 
 ## Use of inferior tools impacting code quality
 
@@ -101,6 +97,7 @@ ease of use, integration with other tools, cost, and last but not least populari
 In fact, a popular tool is more likely to be known by new hires, thus reducing
 onboarding costs, and any problem that may arise with the tool is likely to have
 been solved by someone and is just a google search away.
+
 
 ## Quality of code layout
 
@@ -197,43 +194,25 @@ communicate intent, putting main, front facing functionality before internal one
 ## Accuracy of design of interface elements, such as APIs, web APIs, file formats.
 
 
+## Establishing a culture of quality
 
+%s methodology for manufacturing should be applied to software as well.
+5s is a workplace organisation strategy that focus on the following points:
 
-- implement things locally, then cleanup and promote globally.
+- Sort: 
+- Set in order:
+- Shine
+- Standardise
+- Sustain:
+
+## Establishing standards
+
 - common code conventions and unwritten rules.
+- implement things locally, then cleanup and promote globally.
+
+## Code ownership policies
+
 - code ownership: tragedy of the commons, bystander effect.
-
-
-12. Do you keep up with technology?
-
-Sooner or later, something of your hardly implemented solutions will be implemented better
-by some external product. It is time to move away from your internal product. You are delegating
-problems. I've seen plenty of times when stubborn developers clinged to their own file format
-when HDF5 offered the experience of a full research team whose goal is to deliver the most
-performant file format for scientific storage. Your business is in developing scientific
-software, not in developing file formats. Ditch your file format. It made sense 10 years ago,
-now it's time to move on.
-
-This is also important because people working for you are not only here for the money. They are
-also here to learn new techniques. Using internally developed tools does not enrich their curriculum,
-and if they don't want to become irrelevant on the job market, they are not going to like it.
-
-2. Do you invest in your own tools?
-
-Any technology product builds on previously established tools. In the startup phase,
-these tools are external ones, either opensource or commercial products. As the startup
-grows, so does the need for specialized tools, such as a deployment infrastructure, a
-specialized library for core business tasks, classes and functions to reduce boilerplate,
-documentation. You must invest in these tools because they increase the velocity of
-development, yet investment in these tools is considered waste because it does not generate
-revenue. Truth is, your developers are customers too, and specifically they are customers 
-that consume money. The more they have to fiddle with your own broken tools, the less
-efficient they will be. Invest in your tools, or your ability to deliver will be crushed 
-under their ineffectiveness.
-
-- write code that is overly complex in response to needs for genericity that is not there, in the name of flexibility, but end up being inflexible due to the complexity of the resulting design.
-- Complexity for the sake of complexity. Inability to keep things simple and lean.
-
 6. Do you have loose, but full code ownership?
 
 Any software developer or manager has his own opinion on this one. Code ownership
@@ -248,6 +227,40 @@ and is hopefully more consistent than a bunch of people acting on it.
 Coding is not wikipedia. Wikipedia does not rely on logic to build a meaningful narrative.
 Coding requires correctness and logical consistency.
 
+## Quality of internal tools 
+
+Any technology product builds on previously established tools. In the startup phase,
+these tools are external ones, either opensource or commercial products. As the startup
+grows, so does the need for specialized tools, such as a deployment infrastructure, a
+specialized library for core business tasks, classes and functions to reduce boilerplate,
+documentation. You must invest in these tools because they increase the velocity of
+development, yet investment in these tools is considered waste because it does not generate
+revenue. Truth is, your developers are customers too, and specifically they are customers 
+that consume money. The more they have to fiddle with your own broken tools, the less
+efficient they will be. Invest in your tools, or your ability to deliver will be crushed 
+under their ineffectiveness.
+
+
+## Make it, use it, bin it
+
+Sooner or later, something of your hardly implemented solutions will be implemented better
+by some external product. It is time to move away from your internal product. You are delegating
+problems. I've seen plenty of times when stubborn developers clinged to their own file format
+when HDF5 offered the experience of a full research team whose goal is to deliver the most
+performant file format for scientific storage. Your business is in developing scientific
+software, not in developing file formats. Ditch your file format. It made sense 10 years ago,
+now it's time to move on.
+
+This is also important because people working for you are not only here for the money. They are
+also here to learn new techniques. Using internally developed tools does not enrich their curriculum,
+and if they don't want to become irrelevant on the job market, they are not going to like it.
+
+
+
+- write code that is overly complex in response to needs for genericity that is not there, in the name of flexibility, but end up being inflexible due to the complexity of the resulting design.
+- Complexity for the sake of complexity. Inability to keep things simple and lean.
+
+
 - code conflicts arise from poor management. 
 
 - schizophrenic development: many different brains with no clear, uniform mindset lead to confusing, schizophrenic code.
@@ -256,11 +269,11 @@ Coding requires correctness and logical consistency.
 
 # Disorganized notes 
 
-%s methodology for manufacturing should be applied to software as well.
-5s is a workplace organisation strategy that focus on the following points:
+Code quality must be analysed under various aspects:
 
-- Sort: 
-- Set in order:
-- Shine
-- Standardise
-- Sustain:
+- Quality of code layout 
+- Quality of code formatting and ordering
+- Quality of API documentation
+- Accuracy of design of routines, classes, modules.
+- Accuracy of design of interface elements, such as APIs, web APIs, file formats.
+
