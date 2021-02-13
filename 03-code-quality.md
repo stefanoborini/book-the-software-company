@@ -98,7 +98,6 @@ In fact, a popular tool is more likely to be known by new hires, thus reducing
 onboarding costs, and any problem that may arise with the tool is likely to have
 been solved by someone and is just a google search away.
 
-
 ## Quality of code layout
 
 Code is generally not contained in a single file. Instead, it is subdivided in files and folders
@@ -227,6 +226,9 @@ and is hopefully more consistent than a bunch of people acting on it.
 Coding is not wikipedia. Wikipedia does not rely on logic to build a meaningful narrative.
 Coding requires correctness and logical consistency.
 
+- code conflicts arise from poor management. 
+- schizophrenic development: many different brains with no clear, uniform mindset lead to confusing, schizophrenic code.
+
 ## Quality of internal tools 
 
 Any technology product builds on previously established tools. In the startup phase,
@@ -255,15 +257,9 @@ This is also important because people working for you are not only here for the 
 also here to learn new techniques. Using internally developed tools does not enrich their curriculum,
 and if they don't want to become irrelevant on the job market, they are not going to like it.
 
-
-
 - write code that is overly complex in response to needs for genericity that is not there, in the name of flexibility, but end up being inflexible due to the complexity of the resulting design.
 - Complexity for the sake of complexity. Inability to keep things simple and lean.
 
-
-- code conflicts arise from poor management. 
-
-- schizophrenic development: many different brains with no clear, uniform mindset lead to confusing, schizophrenic code.
 - implementing the same things twice in parallel 
 - solving big problems without addressing user-centric fundamental (e.g. installation)
 
